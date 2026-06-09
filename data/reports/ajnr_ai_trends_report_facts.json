@@ -1,0 +1,1870 @@
+{
+  "corpus_summary": {
+    "total_papers": 229,
+    "total_citations": 5456,
+    "total_citations_age_adjusted": 912.0,
+    "mean_citations_per_paper": 23.83,
+    "year_range": [
+      2017,
+      2026
+    ]
+  },
+  "top_cited_overall": [
+    {
+      "title": "Deep-learning convolutional neural networks accurately classify genetic mutations in gliomas",
+      "year": 2018,
+      "citations": 437,
+      "citations_per_year": 48.6,
+      "subfields": [
+        "Detection / classification (CADx)",
+        "Explainability / trustworthy AI",
+        "Generative / diffusion models",
+        "Image segmentation",
+        "Large language models / NLP",
+        "Quantitative imaging"
+      ],
+      "summary": null
+    },
+    {
+      "title": "Radiomics in Brain Tumor: Image Assessment, Quantitative Feature Descriptors, and Machine-Learning Approaches",
+      "year": 2018,
+      "citations": 350,
+      "citations_per_year": 38.9,
+      "subfields": [
+        "Detection / classification (CADx)",
+        "Image segmentation",
+        "Machine learning",
+        "Prognosis / outcome prediction",
+        "Quantitative imaging"
+      ],
+      "summary": null
+    },
+    {
+      "title": "Deep learning in neuroradiology",
+      "year": 2018,
+      "citations": 274,
+      "citations_per_year": 30.4,
+      "subfields": [
+        "Detection / classification (CADx)",
+        "Explainability / trustworthy AI",
+        "Image reconstruction / acceleration",
+        "Image segmentation",
+        "Multimodal AI",
+        "Prognosis / outcome prediction",
+        "Quantitative imaging"
+      ],
+      "summary": null
+    },
+    {
+      "title": "Hybrid 3D/2D convolutional neural network for hemorrhage evaluation on head CT",
+      "year": 2018,
+      "citations": 244,
+      "citations_per_year": 27.1,
+      "subfields": [
+        "Detection / classification (CADx)",
+        "Image segmentation",
+        "Quantitative imaging"
+      ],
+      "summary": null
+    },
+    {
+      "title": "Artificial intelligence and acute stroke imaging",
+      "year": 2021,
+      "citations": 228,
+      "citations_per_year": 38.0,
+      "subfields": [
+        "Detection / classification (CADx)",
+        "Image reconstruction / acceleration",
+        "Image segmentation",
+        "Large language models / NLP",
+        "Prognosis / outcome prediction",
+        "Quantitative imaging"
+      ],
+      "summary": null
+    }
+  ],
+  "yearly": [
+    {
+      "year": 2017,
+      "n_papers": 6,
+      "total_citations": 198,
+      "total_citations_age_adjusted": 19.8,
+      "top_subfields": {
+        "Quantitative imaging": 6,
+        "Detection / classification (CADx)": 5,
+        "Image segmentation": 5,
+        "Prognosis / outcome prediction": 2,
+        "Large language models / NLP": 2
+      },
+      "top_cited": [
+        {
+          "title": "Differentiation of enhancing glioma and primary central nervous system lymphoma by texture-based machine learning",
+          "year": 2017,
+          "citations": 59,
+          "citations_per_year": 5.9,
+          "subfields": [
+            "Detection / classification (CADx)",
+            "Image segmentation",
+            "Large language models / NLP",
+            "Quantitative imaging"
+          ],
+          "summary": null
+        },
+        {
+          "title": "Mri-based texture analysis to differentiate sinonasal squamous cell carcinoma from inverted papilloma",
+          "year": 2017,
+          "citations": 57,
+          "citations_per_year": 5.7,
+          "subfields": [
+            "Detection / classification (CADx)",
+            "Image segmentation",
+            "Large language models / NLP",
+            "Quantitative imaging"
+          ],
+          "summary": null
+        },
+        {
+          "title": "Combined diffusion tensor imaging and apparent transverse relaxation rate differentiate Parkinson disease and atypical parkinsonism",
+          "year": 2017,
+          "citations": 36,
+          "citations_per_year": 3.6,
+          "subfields": [
+            "Detection / classification (CADx)",
+            "Image segmentation",
+            "Quantitative imaging"
+          ],
+          "summary": null
+        },
+        {
+          "title": "A fully automated, atlas-based approach for superior cerebellar peduncle evaluation in progressive supranuclear palsy phenotypes",
+          "year": 2017,
+          "citations": 21,
+          "citations_per_year": 2.1,
+          "subfields": [
+            "Detection / classification (CADx)",
+            "Image segmentation",
+            "Multimodal AI",
+            "Quantitative imaging"
+          ],
+          "summary": null
+        },
+        {
+          "title": "Brain network architecture and global intelligence in children with focal epilepsy",
+          "year": 2017,
+          "citations": 16,
+          "citations_per_year": 1.6,
+          "subfields": [
+            "Generative / diffusion models",
+            "Machine learning (general)",
+            "Prognosis / outcome prediction",
+            "Quantitative imaging"
+          ],
+          "summary": null
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "n_papers": 5,
+      "total_citations": 1321,
+      "total_citations_age_adjusted": 146.8,
+      "top_subfields": {
+        "Detection / classification (CADx)": 5,
+        "Image segmentation": 4,
+        "Quantitative imaging": 4,
+        "Explainability / trustworthy AI": 2,
+        "Image reconstruction / acceleration": 2
+      },
+      "top_cited": [
+        {
+          "title": "Deep-learning convolutional neural networks accurately classify genetic mutations in gliomas",
+          "year": 2018,
+          "citations": 437,
+          "citations_per_year": 48.6,
+          "subfields": [
+            "Detection / classification (CADx)",
+            "Explainability / trustworthy AI",
+            "Generative / diffusion models",
+            "Image segmentation",
+            "Large language models / NLP",
+            "Quantitative imaging"
+          ],
+          "summary": null
+        },
+        {
+          "title": "Radiomics in Brain Tumor: Image Assessment, Quantitative Feature Descriptors, and Machine-Learning Approaches",
+          "year": 2018,
+          "citations": 350,
+          "citations_per_year": 38.9,
+          "subfields": [
+            "Detection / classification (CADx)",
+            "Image segmentation",
+            "Machine learning",
+            "Prognosis / outcome prediction",
+            "Quantitative imaging"
+          ],
+          "summary": null
+        },
+        {
+          "title": "Deep learning in neuroradiology",
+          "year": 2018,
+          "citations": 274,
+          "citations_per_year": 30.4,
+          "subfields": [
+            "Detection / classification (CADx)",
+            "Explainability / trustworthy AI",
+            "Image reconstruction / acceleration",
+            "Image segmentation",
+            "Multimodal AI",
+            "Prognosis / outcome prediction",
+            "Quantitative imaging"
+          ],
+          "summary": null
+        },
+        {
+          "title": "Hybrid 3D/2D convolutional neural network for hemorrhage evaluation on head CT",
+          "year": 2018,
+          "citations": 244,
+          "citations_per_year": 27.1,
+          "subfields": [
+            "Detection / classification (CADx)",
+            "Image segmentation",
+            "Quantitative imaging"
+          ],
+          "summary": null
+        },
+        {
+          "title": "3D deep learning angiography (3D-DLA) from C-arm Conebeam CT",
+          "year": 2018,
+          "citations": 16,
+          "citations_per_year": 1.8,
+          "subfields": [
+            "Detection / classification (CADx)",
+            "Image reconstruction / acceleration",
+            "image reconstruction / acceleration",
+            "image segmentation",
+            "quantitative imaging"
+          ],
+          "summary": null
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "n_papers": 14,
+      "total_citations": 870,
+      "total_citations_age_adjusted": 108.8,
+      "top_subfields": {
+        "Quantitative imaging": 12,
+        "Image segmentation": 11,
+        "Detection / classification (CADx)": 9,
+        "Image reconstruction / acceleration": 3,
+        "Prognosis / outcome prediction": 3
+      },
+      "top_cited": [
+        {
+          "title": "Deep learning-based detection of intracranial aneurysms in 3D TOF-MRA",
+          "year": 2019,
+          "citations": 160,
+          "citations_per_year": 20.0,
+          "subfields": [
+            "Detection / classification (CADx)",
+            "Image segmentation",
+            "Quantitative imaging"
+          ],
+          "summary": null
+        },
+        {
+          "title": "Automated aspects on noncontrast CT scans in patients with acute ischemic stroke using machine learning",
+          "year": 2019,
+          "citations": 120,
+          "citations_per_year": 15.0,
+          "subfields": [
+            "Detection / classification (CADx)",
+            "Image segmentation",
+            "Large language models / NLP",
+            "Quantitative imaging"
+          ],
+          "summary": null
+        },
+        {
+          "title": "MR imaging-based radiomic signatures of distinct molecular subgroups of medulloblastoma",
+          "year": 2019,
+          "citations": 116,
+          "citations_per_year": 14.5,
+          "subfields": [
+            "Detection / classification (CADx)",
+            "Image segmentation",
+            "Prognosis / outcome prediction",
+            "Quantitative imaging",
+            "detection / classification (CADx)",
+            "image segmentation",
+            "quantitative imaging"
+          ],
+          "summary": null
+        },
+        {
+          "title": "Convolutional neural network–based automated segmentation of the spinal cord and contusion injury: Deep learning biomarker correlates of motor impairment in acute spinal cord injury",
+          "year": 2019,
+          "citations": 84,
+          "citations_per_year": 10.5,
+          "subfields": [
+            "Image segmentation",
+            "Prognosis / outcome prediction",
+            "Quantitative imaging"
+          ],
+          "summary": null
+        },
+        {
+          "title": "Improving the quality of synthetic FLAIR images with deep learning using a conditional generative adversarial network for pixel-by-pixel image translation",
+          "year": 2019,
+          "citations": 74,
+          "citations_per_year": 9.2,
+          "subfields": [
+            "Generative / diffusion models",
+            "Image reconstruction / acceleration",
+            "Image segmentation"
+          ],
+          "summary": null
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "n_papers": 14,
+      "total_citations": 621,
+      "total_citations_age_adjusted": 88.7,
+      "top_subfields": {
+        "Quantitative imaging": 12,
+        "Image segmentation": 10,
+        "Detection / classification (CADx)": 9,
+        "Prognosis / outcome prediction": 6,
+        "Image reconstruction / acceleration": 4
+      },
+      "top_cited": [
+        {
+          "title": "Deep transfer learning and radiomics feature prediction of survival of patients with high-grade gliomas",
+          "year": 2020,
+          "citations": 107,
+          "citations_per_year": 15.3,
+          "subfields": [
+            "Detection / classification (CADx)",
+            "Foundation models / self-supervised",
+            "Image segmentation",
+            "Prognosis / outcome prediction",
+            "Quantitative imaging"
+          ],
+          "summary": null
+        },
+        {
+          "title": "Artificial intelligence in the management of intracranial aneurysms: Current status and future perspectives",
+          "year": 2020,
+          "citations": 89,
+          "citations_per_year": 12.7,
+          "subfields": [
+            "Detection / classification (CADx)",
+            "Prognosis / outcome prediction",
+            "Quantitative imaging"
+          ],
+          "summary": null
+        },
+        {
+          "title": "Deep learning for pediatric posterior fossa tumor detection and classification: A multi-institutional study",
+          "year": 2020,
+          "citations": 66,
+          "citations_per_year": 9.4,
+          "subfields": [
+            "Detection / classification (CADx)",
+            "Image segmentation",
+            "Quantitative imaging"
+          ],
+          "summary": null
+        },
+        {
+          "title": "Development and validation of a deep learning-based automatic brain segmentation and classification algorithm for Alzheimer disease using 3D T1-weighted volumetric images",
+          "year": 2020,
+          "citations": 60,
+          "citations_per_year": 8.6,
+          "subfields": [
+            "Detection / classification (CADx)",
+            "Image segmentation",
+            "Quantitative imaging"
+          ],
+          "summary": null
+        },
+        {
+          "title": "Automatic machine learning to differentiate pediatric posterior fossa tumors on routine MR imaging",
+          "year": 2020,
+          "citations": 58,
+          "citations_per_year": 8.3,
+          "subfields": [
+            "Detection / classification (CADx)",
+            "Image segmentation",
+            "Quantitative imaging"
+          ],
+          "summary": null
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "n_papers": 30,
+      "total_citations": 1414,
+      "total_citations_age_adjusted": 235.7,
+      "top_subfields": {
+        "Detection / classification (CADx)": 25,
+        "Quantitative imaging": 17,
+        "Image segmentation": 14,
+        "Prognosis / outcome prediction": 10,
+        "Large language models / NLP": 8
+      },
+      "top_cited": [
+        {
+          "title": "Artificial intelligence and acute stroke imaging",
+          "year": 2021,
+          "citations": 228,
+          "citations_per_year": 38.0,
+          "subfields": [
+            "Detection / classification (CADx)",
+            "Image reconstruction / acceleration",
+            "Image segmentation",
+            "Large language models / NLP",
+            "Prognosis / outcome prediction",
+            "Quantitative imaging"
+          ],
+          "summary": null
+        },
+        {
+          "title": "MRI-based deep-learning method for determining glioma MGMT promoter methylation status",
+          "year": 2021,
+          "citations": 95,
+          "citations_per_year": 15.8,
+          "subfields": [
+            "Detection / classification (CADx)",
+            "Image segmentation",
+            "Prognosis / outcome prediction",
+            "Quantitative imaging"
+          ],
+          "summary": null
+        },
+        {
+          "title": "Evaluation of artificial intelligence-powered identification of large-vessel occlusions in a comprehensive stroke center",
+          "year": 2021,
+          "citations": 92,
+          "citations_per_year": 15.3,
+          "subfields": [
+            "Detection / classification (CADx)"
+          ],
+          "summary": null
+        },
+        {
+          "title": "Ct cervical spine fracture detection using a convolutional neural network",
+          "year": 2021,
+          "citations": 90,
+          "citations_per_year": 15.0,
+          "subfields": [
+            "Detection / classification (CADx)"
+          ],
+          "summary": null
+        },
+        {
+          "title": "Diagnostic accuracy and failure mode analysis of a deep learning algorithm for the detection of cervical spine fractures",
+          "year": 2021,
+          "citations": 81,
+          "citations_per_year": 13.5,
+          "subfields": [
+            "Detection / classification (CADx)"
+          ],
+          "summary": null
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "n_papers": 22,
+      "total_citations": 415,
+      "total_citations_age_adjusted": 83.0,
+      "top_subfields": {
+        "Quantitative imaging": 13,
+        "Image segmentation": 11,
+        "Prognosis / outcome prediction": 11,
+        "Detection / classification (CADx)": 11,
+        "image segmentation": 5
+      },
+      "top_cited": [
+        {
+          "title": "Automated 3D Fetal Brain Segmentation Using an Optimized Deep Learning Approach",
+          "year": 2022,
+          "citations": 52,
+          "citations_per_year": 10.4,
+          "subfields": [
+            "Image segmentation",
+            "image segmentation"
+          ],
+          "summary": null
+        },
+        {
+          "title": "Accelerated Synthetic MRI with Deep Learning-Based Reconstruction for Pediatric Neuroimaging",
+          "year": 2022,
+          "citations": 36,
+          "citations_per_year": 7.2,
+          "subfields": [
+            "Image reconstruction / acceleration",
+            "Quantitative imaging"
+          ],
+          "summary": null
+        },
+        {
+          "title": "Clinical Validation and Extension of an Automated, Deep Learning–Based Algorithm for Quantitative Sinus CT Analysis",
+          "year": 2022,
+          "citations": 29,
+          "citations_per_year": 5.8,
+          "subfields": [
+            "Detection / classification (CADx)",
+            "Image segmentation",
+            "detection / classification (CADx)",
+            "image segmentation",
+            "quantitative imaging"
+          ],
+          "summary": null
+        },
+        {
+          "title": "Radiomics-Based Machine Learning for Outcome Prediction in a Multicenter Phase II Study of Programmed Death-Ligand 1 Inhibition Immunotherapy for Glioblastoma",
+          "year": 2022,
+          "citations": 28,
+          "citations_per_year": 5.6,
+          "subfields": [
+            "Generative / diffusion models",
+            "Prognosis / outcome prediction",
+            "Quantitative imaging"
+          ],
+          "summary": null
+        },
+        {
+          "title": "Hypovascular Cellular Tumor in Primary Central Nervous System Lymphoma is Associated with Treatment Resistance: Tumor Habitat Analysis Using Physiologic MRI",
+          "year": 2022,
+          "citations": 28,
+          "citations_per_year": 5.6,
+          "subfields": [
+            "Image segmentation",
+            "Prognosis / outcome prediction",
+            "Quantitative imaging"
+          ],
+          "summary": null
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "n_papers": 23,
+      "total_citations": 196,
+      "total_citations_age_adjusted": 49.0,
+      "top_subfields": {
+        "Image segmentation": 16,
+        "Detection / classification (CADx)": 15,
+        "Quantitative imaging": 12,
+        "Prognosis / outcome prediction": 9,
+        "Image reconstruction / acceleration": 5
+      },
+      "top_cited": [
+        {
+          "title": "Viz.ai Implementation of Stroke Augmented Intelligence and Communications Platform to Improve Indicators and Outcomes for a Comprehensive Stroke Center and Network",
+          "year": 2023,
+          "citations": 32,
+          "citations_per_year": 8.0,
+          "subfields": [
+            "Detection / classification (CADx)",
+            "Image reconstruction / acceleration",
+            "Large language models / NLP",
+            "Multimodal AI",
+            "Prognosis / outcome prediction"
+          ],
+          "summary": null
+        },
+        {
+          "title": "Deep Learning–Generated Synthetic MR Imaging STIR Spine Images Are Superior in Image Quality and Diagnostically Equivalent to Conventional STIR: A Multicenter, Multireader Trial",
+          "year": 2023,
+          "citations": 18,
+          "citations_per_year": 4.5,
+          "subfields": [
+            "Detection / classification (CADx)",
+            "Image reconstruction / acceleration",
+            "Image segmentation",
+            "Quantitative imaging"
+          ],
+          "summary": null
+        },
+        {
+          "title": "Automated Segmentation of Intracranial Thrombus on NCCT and CTA in Patients with Acute Ischemic Stroke Using a Coarse-to-Fine Deep Learning Model",
+          "year": 2023,
+          "citations": 13,
+          "citations_per_year": 3.2,
+          "subfields": [
+            "Image segmentation",
+            "detection / classification (cadx)",
+            "image segmentation",
+            "quantitative imaging"
+          ],
+          "summary": null
+        },
+        {
+          "title": "An Artificial Intelligence Tool for Clinical Decision Support and Protocol Selection for Brain MRI",
+          "year": 2023,
+          "citations": 12,
+          "citations_per_year": 3.0,
+          "subfields": [
+            "AI agents / autonomous systems",
+            "Detection / classification (CADx)",
+            "Prognosis / outcome prediction"
+          ],
+          "summary": null
+        },
+        {
+          "title": "Automatic Quantification of Normal Brain Gyrification Patterns and Changes in Fetuses with Polymicrogyria and Lissencephaly Based on MRI",
+          "year": 2023,
+          "citations": 12,
+          "citations_per_year": 3.0,
+          "subfields": [
+            "Detection / classification (CADx)",
+            "Image segmentation",
+            "detection / classification (CADx)",
+            "quantitative imaging"
+          ],
+          "summary": null
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "n_papers": 34,
+      "total_citations": 235,
+      "total_citations_age_adjusted": 78.3,
+      "top_subfields": {
+        "Detection / classification (CADx)": 27,
+        "Image segmentation": 19,
+        "Quantitative imaging": 17,
+        "Prognosis / outcome prediction": 12,
+        "Image reconstruction / acceleration": 10
+      },
+      "top_cited": [
+        {
+          "title": "Training and Comparison of nnU-Net and DeepMedic Methods for Autosegmentation of Pediatric Brain Tumors",
+          "year": 2024,
+          "citations": 28,
+          "citations_per_year": 9.3,
+          "subfields": [
+            "Image segmentation"
+          ],
+          "summary": null
+        },
+        {
+          "title": "High-Resolution Head CTA: A Prospective Patient Study Comparing Image Quality of Photon-Counting Detector CT and Energy-Integrating Detector CT",
+          "year": 2024,
+          "citations": 16,
+          "citations_per_year": 5.3,
+          "subfields": [
+            "Image reconstruction / acceleration"
+          ],
+          "summary": null
+        },
+        {
+          "title": "A Clinical and Imaging Fused Deep Learning Model Matches Expert Clinician Prediction of 90-Day Stroke Outcomes",
+          "year": 2024,
+          "citations": 13,
+          "citations_per_year": 4.3,
+          "subfields": [
+            "Detection / classification (CADx)",
+            "Prognosis / outcome prediction",
+            "Quantitative imaging"
+          ],
+          "summary": null
+        },
+        {
+          "title": "Automated Detection of Cervical Spinal Stenosis and Cord Compression via Vision Transformer and Rules-Based Classification",
+          "year": 2024,
+          "citations": 13,
+          "citations_per_year": 4.3,
+          "subfields": [
+            "Detection / classification (CADx)",
+            "Foundation models / self-supervised",
+            "Image segmentation",
+            "Multimodal AI"
+          ],
+          "summary": null
+        },
+        {
+          "title": "A Comparison of CT Perfusion Output of RapidAI and Viz.ai Software in the Evaluation of Acute Ischemic Stroke",
+          "year": 2024,
+          "citations": 13,
+          "citations_per_year": 4.3,
+          "subfields": [
+            "Detection / classification (CADx)",
+            "Image segmentation",
+            "Quantitative imaging"
+          ],
+          "summary": null
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "n_papers": 55,
+      "total_citations": 168,
+      "total_citations_age_adjusted": 84.0,
+      "top_subfields": {
+        "Quantitative imaging": 37,
+        "Detection / classification (CADx)": 33,
+        "Image segmentation": 29,
+        "Prognosis / outcome prediction": 20,
+        "Image reconstruction / acceleration": 17
+      },
+      "top_cited": [
+        {
+          "title": "A Review of the Opportunities and Challenges with Large Language Models in Radiology: The Road Ahead",
+          "year": 2025,
+          "citations": 21,
+          "citations_per_year": 10.5,
+          "subfields": [
+            "Explainability / trustworthy AI",
+            "Federated / privacy-preserving learning",
+            "Foundation models / self-supervised",
+            "Large language models / NLP",
+            "Multimodal AI"
+          ],
+          "summary": null
+        },
+        {
+          "title": "Performance of Automated Algorithm in Large and Medium Vessel Occlusion Detection: A Real-World Experience",
+          "year": 2025,
+          "citations": 11,
+          "citations_per_year": 5.5,
+          "subfields": [
+            "Detection / classification (CADx)",
+            "Large language models / NLP"
+          ],
+          "summary": null
+        },
+        {
+          "title": "Deep Learning–Based Super-Resolution Reconstruction on Undersampled Brain Diffusion-Weighted MRI for Infarction Stroke: A Comparison to Conventional Iterative Reconstruction",
+          "year": 2025,
+          "citations": 10,
+          "citations_per_year": 5.0,
+          "subfields": [
+            "Image reconstruction / acceleration"
+          ],
+          "summary": null
+        },
+        {
+          "title": "A Review of Intracranial Aneurysm Imaging Modalities, from CT to State-of-the-Art MR",
+          "year": 2025,
+          "citations": 7,
+          "citations_per_year": 3.5,
+          "subfields": [
+            "Detection / classification (CADx)",
+            "Generative / diffusion models"
+          ],
+          "summary": null
+        },
+        {
+          "title": "Deep Learning–Based Algorithm for Automatic Quantification of Nigrosome-1 and Parkinsonism Classification Using Susceptibility Map–Weighted MRI",
+          "year": 2025,
+          "citations": 7,
+          "citations_per_year": 3.5,
+          "subfields": [
+            "Detection / classification (CADx)",
+            "Image segmentation",
+            "Prognosis / outcome prediction",
+            "Quantitative imaging"
+          ],
+          "summary": null
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "n_papers": 26,
+      "total_citations": 18,
+      "total_citations_age_adjusted": 18.0,
+      "top_subfields": {
+        "Detection / classification (CADx)": 19,
+        "Quantitative imaging": 19,
+        "Image segmentation": 13,
+        "Prognosis / outcome prediction": 11,
+        "Image reconstruction / acceleration": 9
+      },
+      "top_cited": [
+        {
+          "title": "Deep Learning–Based Acceleration in MRI: Current Landscape and Clinical Applications in Neuroradiology",
+          "year": 2026,
+          "citations": 5,
+          "citations_per_year": 5.0,
+          "subfields": [
+            "Explainability / trustworthy AI",
+            "Foundation models / self-supervised",
+            "Image reconstruction / acceleration",
+            "Quantitative imaging"
+          ],
+          "summary": null
+        },
+        {
+          "title": "Choroid Plexus Enlargement in Multiple Sclerosis Correlates with Cortical and Phase Rim Lesions on 7T MRI and Predicts Progression Independent of Relapse Activity",
+          "year": 2026,
+          "citations": 3,
+          "citations_per_year": 3.0,
+          "subfields": [
+            "Detection / classification (CADx)",
+            "Image segmentation",
+            "Prognosis / outcome prediction",
+            "Quantitative imaging"
+          ],
+          "summary": null
+        },
+        {
+          "title": "Artificial Intelligence–Assisted Detection of Amyloid-Related Imaging Abnormalities: Promise and Pitfalls",
+          "year": 2026,
+          "citations": 2,
+          "citations_per_year": 2.0,
+          "subfields": [
+            "Detection / classification (CADx)",
+            "Explainability / trustworthy AI",
+            "Image segmentation",
+            "Prognosis / outcome prediction"
+          ],
+          "summary": null
+        },
+        {
+          "title": "Deep Learning–Based Collateral Scoring on Multiphase CTA in Patients with Acute Ischemic Stroke in the MCA Region",
+          "year": 2026,
+          "citations": 2,
+          "citations_per_year": 2.0,
+          "subfields": [
+            "Detection / classification (CADx)",
+            "Image segmentation",
+            "Quantitative imaging"
+          ],
+          "summary": null
+        },
+        {
+          "title": "Predicting 10-Year Clinical Outcomes in MS with Radiomics-Based Machine Learning Models",
+          "year": 2026,
+          "citations": 2,
+          "citations_per_year": 2.0,
+          "subfields": [
+            "Prognosis / outcome prediction",
+            "detection / classification (CADx)",
+            "prognosis / outcome prediction",
+            "quantitative imaging"
+          ],
+          "summary": null
+        }
+      ]
+    }
+  ],
+  "subfield_growth": [
+    {
+      "subfield": "Detection / classification (CADx)",
+      "total": 158,
+      "early_count": 64,
+      "recent_count": 94,
+      "recent_minus_early": 30,
+      "cagr": 0.1598996025643411
+    },
+    {
+      "subfield": "Image reconstruction / acceleration",
+      "total": 57,
+      "early_count": 16,
+      "recent_count": 41,
+      "recent_minus_early": 25,
+      "cagr": NaN
+    },
+    {
+      "subfield": "Image segmentation",
+      "total": 132,
+      "early_count": 55,
+      "recent_count": 77,
+      "recent_minus_early": 22,
+      "cagr": 0.11200860970221638
+    },
+    {
+      "subfield": "Quantitative imaging",
+      "total": 149,
+      "early_count": 64,
+      "recent_count": 85,
+      "recent_minus_early": 21,
+      "cagr": 0.13663881694331415
+    },
+    {
+      "subfield": "Prognosis / outcome prediction",
+      "total": 86,
+      "early_count": 34,
+      "recent_count": 52,
+      "recent_minus_early": 18,
+      "cagr": 0.2085441515796309
+    },
+    {
+      "subfield": "Explainability / trustworthy AI",
+      "total": 34,
+      "early_count": 8,
+      "recent_count": 26,
+      "recent_minus_early": 18,
+      "cagr": NaN
+    },
+    {
+      "subfield": "Generative / diffusion models",
+      "total": 28,
+      "early_count": 10,
+      "recent_count": 18,
+      "recent_minus_early": 8,
+      "cagr": 0.0
+    },
+    {
+      "subfield": "Large language models / NLP",
+      "total": 34,
+      "early_count": 14,
+      "recent_count": 20,
+      "recent_minus_early": 6,
+      "cagr": 0.04608191864321465
+    },
+    {
+      "subfield": "Multimodal AI",
+      "total": 12,
+      "early_count": 3,
+      "recent_count": 9,
+      "recent_minus_early": 6,
+      "cagr": 0.0
+    },
+    {
+      "subfield": "Federated / privacy-preserving learning",
+      "total": 5,
+      "early_count": 0,
+      "recent_count": 5,
+      "recent_minus_early": 5,
+      "cagr": NaN
+    },
+    {
+      "subfield": "Foundation models / self-supervised",
+      "total": 17,
+      "early_count": 8,
+      "recent_count": 9,
+      "recent_minus_early": 1,
+      "cagr": NaN
+    },
+    {
+      "subfield": "AI agents / autonomous systems",
+      "total": 1,
+      "early_count": 0,
+      "recent_count": 1,
+      "recent_minus_early": 1,
+      "cagr": NaN
+    },
+    {
+      "subfield": "detection / classification (cadx)",
+      "total": 1,
+      "early_count": 0,
+      "recent_count": 1,
+      "recent_minus_early": 1,
+      "cagr": NaN
+    },
+    {
+      "subfield": "generative / diffusion models",
+      "total": 1,
+      "early_count": 0,
+      "recent_count": 1,
+      "recent_minus_early": 1,
+      "cagr": NaN
+    },
+    {
+      "subfield": "detection / classification (CADx)",
+      "total": 8,
+      "early_count": 4,
+      "recent_count": 4,
+      "recent_minus_early": 0,
+      "cagr": NaN
+    },
+    {
+      "subfield": "Machine learning (general)",
+      "total": 1,
+      "early_count": 1,
+      "recent_count": 0,
+      "recent_minus_early": -1,
+      "cagr": -1.0
+    },
+    {
+      "subfield": "Machine learning",
+      "total": 1,
+      "early_count": 1,
+      "recent_count": 0,
+      "recent_minus_early": -1,
+      "cagr": NaN
+    },
+    {
+      "subfield": "explainability / trustworthy AI",
+      "total": 3,
+      "early_count": 2,
+      "recent_count": 1,
+      "recent_minus_early": -1,
+      "cagr": NaN
+    },
+    {
+      "subfield": "prognosis / outcome prediction",
+      "total": 7,
+      "early_count": 4,
+      "recent_count": 3,
+      "recent_minus_early": -1,
+      "cagr": NaN
+    },
+    {
+      "subfield": "multimodal AI",
+      "total": 1,
+      "early_count": 1,
+      "recent_count": 0,
+      "recent_minus_early": -1,
+      "cagr": NaN
+    },
+    {
+      "subfield": "transfer learning",
+      "total": 1,
+      "early_count": 1,
+      "recent_count": 0,
+      "recent_minus_early": -1,
+      "cagr": NaN
+    },
+    {
+      "subfield": "image reconstruction / acceleration",
+      "total": 6,
+      "early_count": 4,
+      "recent_count": 2,
+      "recent_minus_early": -2,
+      "cagr": NaN
+    },
+    {
+      "subfield": "image segmentation",
+      "total": 15,
+      "early_count": 9,
+      "recent_count": 6,
+      "recent_minus_early": -3,
+      "cagr": NaN
+    },
+    {
+      "subfield": "quantitative imaging",
+      "total": 17,
+      "early_count": 10,
+      "recent_count": 7,
+      "recent_minus_early": -3,
+      "cagr": NaN
+    }
+  ],
+  "subfield_impact": [
+    {
+      "subfield": "Detection / classification (CADx)",
+      "n_papers": 158,
+      "total_citations": 4554,
+      "mean_citations": 28.82278481012658,
+      "mean_cpy": 4.55314446453687
+    },
+    {
+      "subfield": "Quantitative imaging",
+      "n_papers": 149,
+      "total_citations": 4258,
+      "mean_citations": 28.57718120805369,
+      "mean_cpy": 4.339453499520614
+    },
+    {
+      "subfield": "Image segmentation",
+      "n_papers": 132,
+      "total_citations": 3936,
+      "mean_citations": 29.818181818181817,
+      "mean_cpy": 4.526677489177489
+    },
+    {
+      "subfield": "Prognosis / outcome prediction",
+      "n_papers": 86,
+      "total_citations": 2159,
+      "mean_citations": 25.1046511627907,
+      "mean_cpy": 4.069158361018826
+    },
+    {
+      "subfield": "Large language models / NLP",
+      "n_papers": 34,
+      "total_citations": 1268,
+      "mean_citations": 37.294117647058826,
+      "mean_cpy": 5.84624183006536
+    },
+    {
+      "subfield": "Image reconstruction / acceleration",
+      "n_papers": 57,
+      "total_citations": 1166,
+      "mean_citations": 20.45614035087719,
+      "mean_cpy": 3.7277708159287104
+    },
+    {
+      "subfield": "Explainability / trustworthy AI",
+      "n_papers": 34,
+      "total_citations": 949,
+      "mean_citations": 27.91176470588235,
+      "mean_cpy": 4.238655462184873
+    },
+    {
+      "subfield": "Generative / diffusion models",
+      "n_papers": 28,
+      "total_citations": 781,
+      "mean_citations": 27.892857142857142,
+      "mean_cpy": 4.094756235827664
+    },
+    {
+      "subfield": "Multimodal AI",
+      "n_papers": 12,
+      "total_citations": 424,
+      "mean_citations": 35.333333333333336,
+      "mean_cpy": 5.864814814814815
+    },
+    {
+      "subfield": "Machine learning",
+      "n_papers": 1,
+      "total_citations": 350,
+      "mean_citations": 350.0,
+      "mean_cpy": 38.888888888888886
+    },
+    {
+      "subfield": "quantitative imaging",
+      "n_papers": 17,
+      "total_citations": 316,
+      "mean_citations": 18.58823529411765,
+      "mean_cpy": 3.1582166199813257
+    },
+    {
+      "subfield": "image segmentation",
+      "n_papers": 15,
+      "total_citations": 315,
+      "mean_citations": 21.0,
+      "mean_cpy": 3.6048677248677246
+    },
+    {
+      "subfield": "Foundation models / self-supervised",
+      "n_papers": 17,
+      "total_citations": 295,
+      "mean_citations": 17.352941176470587,
+      "mean_cpy": 3.6057422969187676
+    },
+    {
+      "subfield": "detection / classification (CADx)",
+      "n_papers": 8,
+      "total_citations": 188,
+      "mean_citations": 23.5,
+      "mean_cpy": 3.9625
+    },
+    {
+      "subfield": "prognosis / outcome prediction",
+      "n_papers": 7,
+      "total_citations": 93,
+      "mean_citations": 13.285714285714286,
+      "mean_cpy": 2.6612244897959187
+    }
+  ],
+  "impact_methods": [
+    {
+      "term": "convolutional neural network",
+      "n_papers": 9,
+      "total_citations": 1038,
+      "mean_citations": 115.3
+    },
+    {
+      "term": "radiomics",
+      "n_papers": 11,
+      "total_citations": 634,
+      "mean_citations": 57.6
+    },
+    {
+      "term": "machine learning",
+      "n_papers": 8,
+      "total_citations": 615,
+      "mean_citations": 76.9
+    },
+    {
+      "term": "convolutional_neural_network",
+      "n_papers": 13,
+      "total_citations": 511,
+      "mean_citations": 39.3
+    },
+    {
+      "term": "principal component analysis",
+      "n_papers": 2,
+      "total_citations": 440,
+      "mean_citations": 220.0
+    },
+    {
+      "term": "deep learning",
+      "n_papers": 22,
+      "total_citations": 439,
+      "mean_citations": 20.0
+    },
+    {
+      "term": "u-net",
+      "n_papers": 13,
+      "total_citations": 262,
+      "mean_citations": 20.2
+    },
+    {
+      "term": "convolutional_neural_networks",
+      "n_papers": 3,
+      "total_citations": 236,
+      "mean_citations": 78.7
+    },
+    {
+      "term": "random_forest",
+      "n_papers": 9,
+      "total_citations": 204,
+      "mean_citations": 22.7
+    },
+    {
+      "term": "neural network",
+      "n_papers": 2,
+      "total_citations": 170,
+      "mean_citations": 85.0
+    },
+    {
+      "term": "logistic regression",
+      "n_papers": 9,
+      "total_citations": 166,
+      "mean_citations": 18.4
+    },
+    {
+      "term": "support vector machine",
+      "n_papers": 8,
+      "total_citations": 156,
+      "mean_citations": 19.5
+    }
+  ],
+  "impact_model_families": [
+    {
+      "term": "cnn",
+      "n_papers": 131,
+      "total_citations": 3628,
+      "mean_citations": 27.7
+    },
+    {
+      "term": "classical_ml",
+      "n_papers": 92,
+      "total_citations": 2462,
+      "mean_citations": 26.8
+    },
+    {
+      "term": "radiomics",
+      "n_papers": 40,
+      "total_citations": 1214,
+      "mean_citations": 30.4
+    },
+    {
+      "term": "other",
+      "n_papers": 44,
+      "total_citations": 563,
+      "mean_citations": 12.8
+    },
+    {
+      "term": "transformer_llm",
+      "n_papers": 15,
+      "total_citations": 146,
+      "mean_citations": 9.7
+    },
+    {
+      "term": "gan",
+      "n_papers": 7,
+      "total_citations": 91,
+      "mean_citations": 13.0
+    },
+    {
+      "term": "vision_transformer",
+      "n_papers": 11,
+      "total_citations": 78,
+      "mean_citations": 7.1
+    },
+    {
+      "term": "ensemble",
+      "n_papers": 3,
+      "total_citations": 55,
+      "mean_citations": 18.3
+    },
+    {
+      "term": "ensemble_learning",
+      "n_papers": 3,
+      "total_citations": 43,
+      "mean_citations": 14.3
+    },
+    {
+      "term": "deep_learning",
+      "n_papers": 3,
+      "total_citations": 32,
+      "mean_citations": 10.7
+    },
+    {
+      "term": "rnn",
+      "n_papers": 2,
+      "total_citations": 17,
+      "mean_citations": 8.5
+    },
+    {
+      "term": "clustering",
+      "n_papers": 2,
+      "total_citations": 3,
+      "mean_citations": 1.5
+    }
+  ],
+  "impact_keywords": [],
+  "impact_benchmarks": [
+    {
+      "term": "The Cancer Imaging Archives",
+      "n_papers": 1,
+      "total_citations": 437,
+      "mean_citations": 437.0
+    },
+    {
+      "term": "The Cancer Genome Atlas",
+      "n_papers": 3,
+      "total_citations": 247,
+      "mean_citations": 82.3
+    },
+    {
+      "term": "in-house institutional cohort (single institution)",
+      "n_papers": 1,
+      "total_citations": 244,
+      "mean_citations": 244.0
+    },
+    {
+      "term": "adni",
+      "n_papers": 9,
+      "total_citations": 137,
+      "mean_citations": 15.2
+    },
+    {
+      "term": "multi-institutional retrospective dataset from 3 children's hospitals",
+      "n_papers": 1,
+      "total_citations": 116,
+      "mean_citations": 116.0
+    },
+    {
+      "term": "in-house_institutional_cohort",
+      "n_papers": 1,
+      "total_citations": 107,
+      "mean_citations": 107.0
+    },
+    {
+      "term": "brats",
+      "n_papers": 7,
+      "total_citations": 104,
+      "mean_citations": 14.9
+    },
+    {
+      "term": "The Cancer Imaging Archive",
+      "n_papers": 1,
+      "total_citations": 95,
+      "mean_citations": 95.0
+    },
+    {
+      "term": "spinal cord toolbox (propseg, deepseg)",
+      "n_papers": 1,
+      "total_citations": 84,
+      "mean_citations": 84.0
+    },
+    {
+      "term": "in-house_multicenter_cohort",
+      "n_papers": 1,
+      "total_citations": 66,
+      "mean_citations": 66.0
+    },
+    {
+      "term": "internal cohort from two children's hospitals",
+      "n_papers": 1,
+      "total_citations": 59,
+      "mean_citations": 59.0
+    },
+    {
+      "term": "internal_test_set",
+      "n_papers": 1,
+      "total_citations": 52,
+      "mean_citations": 52.0
+    }
+  ],
+  "rigor_trend": [
+    {
+      "year": 2017,
+      "n_papers": 6,
+      "pct_external_validation": 0.0,
+      "pct_code_available": 0.0,
+      "pct_data_available": 0.0,
+      "pct_multi_center": 0.0
+    },
+    {
+      "year": 2018,
+      "n_papers": 5,
+      "pct_external_validation": 0.0,
+      "pct_code_available": 0.0,
+      "pct_data_available": 0.0,
+      "pct_multi_center": 0.0
+    },
+    {
+      "year": 2019,
+      "n_papers": 14,
+      "pct_external_validation": 7.1,
+      "pct_code_available": 0.0,
+      "pct_data_available": 0.0,
+      "pct_multi_center": 7.1
+    },
+    {
+      "year": 2020,
+      "n_papers": 14,
+      "pct_external_validation": 7.1,
+      "pct_code_available": 0.0,
+      "pct_data_available": 0.0,
+      "pct_multi_center": 21.4
+    },
+    {
+      "year": 2021,
+      "n_papers": 30,
+      "pct_external_validation": 23.3,
+      "pct_code_available": 0.0,
+      "pct_data_available": 0.0,
+      "pct_multi_center": 36.7
+    },
+    {
+      "year": 2022,
+      "n_papers": 22,
+      "pct_external_validation": 18.2,
+      "pct_code_available": 0.0,
+      "pct_data_available": 0.0,
+      "pct_multi_center": 36.4
+    },
+    {
+      "year": 2023,
+      "n_papers": 23,
+      "pct_external_validation": 13.0,
+      "pct_code_available": 0.0,
+      "pct_data_available": 0.0,
+      "pct_multi_center": 21.7
+    },
+    {
+      "year": 2024,
+      "n_papers": 34,
+      "pct_external_validation": 29.4,
+      "pct_code_available": 0.0,
+      "pct_data_available": 0.0,
+      "pct_multi_center": 29.4
+    },
+    {
+      "year": 2025,
+      "n_papers": 55,
+      "pct_external_validation": 14.5,
+      "pct_code_available": 3.6,
+      "pct_data_available": 0.0,
+      "pct_multi_center": 23.6
+    },
+    {
+      "year": 2026,
+      "n_papers": 26,
+      "pct_external_validation": 7.7,
+      "pct_code_available": 0.0,
+      "pct_data_available": 0.0,
+      "pct_multi_center": 19.2
+    }
+  ],
+  "keyword_bursts": [],
+  "emerging_keywords": [],
+  "hype_vs_impact": [
+    {
+      "subfield": "Detection / classification (CADx)",
+      "n_papers": 158,
+      "total_citations": 4554,
+      "mean_citations": 28.82278481012658,
+      "mean_cpy": 4.55314446453687
+    },
+    {
+      "subfield": "Quantitative imaging",
+      "n_papers": 149,
+      "total_citations": 4258,
+      "mean_citations": 28.57718120805369,
+      "mean_cpy": 4.339453499520614
+    },
+    {
+      "subfield": "Image segmentation",
+      "n_papers": 132,
+      "total_citations": 3936,
+      "mean_citations": 29.818181818181817,
+      "mean_cpy": 4.526677489177489
+    },
+    {
+      "subfield": "Prognosis / outcome prediction",
+      "n_papers": 86,
+      "total_citations": 2159,
+      "mean_citations": 25.1046511627907,
+      "mean_cpy": 4.069158361018826
+    },
+    {
+      "subfield": "Image reconstruction / acceleration",
+      "n_papers": 57,
+      "total_citations": 1166,
+      "mean_citations": 20.45614035087719,
+      "mean_cpy": 3.7277708159287104
+    },
+    {
+      "subfield": "Large language models / NLP",
+      "n_papers": 34,
+      "total_citations": 1268,
+      "mean_citations": 37.294117647058826,
+      "mean_cpy": 5.84624183006536
+    },
+    {
+      "subfield": "Explainability / trustworthy AI",
+      "n_papers": 34,
+      "total_citations": 949,
+      "mean_citations": 27.91176470588235,
+      "mean_cpy": 4.238655462184873
+    },
+    {
+      "subfield": "Generative / diffusion models",
+      "n_papers": 28,
+      "total_citations": 781,
+      "mean_citations": 27.892857142857142,
+      "mean_cpy": 4.094756235827664
+    },
+    {
+      "subfield": "Foundation models / self-supervised",
+      "n_papers": 17,
+      "total_citations": 295,
+      "mean_citations": 17.352941176470587,
+      "mean_cpy": 3.6057422969187676
+    },
+    {
+      "subfield": "quantitative imaging",
+      "n_papers": 17,
+      "total_citations": 316,
+      "mean_citations": 18.58823529411765,
+      "mean_cpy": 3.1582166199813257
+    },
+    {
+      "subfield": "image segmentation",
+      "n_papers": 15,
+      "total_citations": 315,
+      "mean_citations": 21.0,
+      "mean_cpy": 3.6048677248677246
+    },
+    {
+      "subfield": "Multimodal AI",
+      "n_papers": 12,
+      "total_citations": 424,
+      "mean_citations": 35.333333333333336,
+      "mean_cpy": 5.864814814814815
+    },
+    {
+      "subfield": "detection / classification (CADx)",
+      "n_papers": 8,
+      "total_citations": 188,
+      "mean_citations": 23.5,
+      "mean_cpy": 3.9625
+    },
+    {
+      "subfield": "prognosis / outcome prediction",
+      "n_papers": 7,
+      "total_citations": 93,
+      "mean_citations": 13.285714285714286,
+      "mean_cpy": 2.6612244897959187
+    },
+    {
+      "subfield": "image reconstruction / acceleration",
+      "n_papers": 6,
+      "total_citations": 71,
+      "mean_citations": 11.833333333333334,
+      "mean_cpy": 1.7101851851851853
+    },
+    {
+      "subfield": "Federated / privacy-preserving learning",
+      "n_papers": 5,
+      "total_citations": 38,
+      "mean_citations": 7.6,
+      "mean_cpy": 3.5333333333333337
+    },
+    {
+      "subfield": "explainability / trustworthy AI",
+      "n_papers": 3,
+      "total_citations": 56,
+      "mean_citations": 18.666666666666668,
+      "mean_cpy": 3.1
+    },
+    {
+      "subfield": "AI agents / autonomous systems",
+      "n_papers": 1,
+      "total_citations": 12,
+      "mean_citations": 12.0,
+      "mean_cpy": 3.0
+    },
+    {
+      "subfield": "Machine learning",
+      "n_papers": 1,
+      "total_citations": 350,
+      "mean_citations": 350.0,
+      "mean_cpy": 38.888888888888886
+    },
+    {
+      "subfield": "Machine learning (general)",
+      "n_papers": 1,
+      "total_citations": 16,
+      "mean_citations": 16.0,
+      "mean_cpy": 1.6
+    },
+    {
+      "subfield": "detection / classification (cadx)",
+      "n_papers": 1,
+      "total_citations": 13,
+      "mean_citations": 13.0,
+      "mean_cpy": 3.25
+    },
+    {
+      "subfield": "generative / diffusion models",
+      "n_papers": 1,
+      "total_citations": 0,
+      "mean_citations": 0.0,
+      "mean_cpy": 0.0
+    },
+    {
+      "subfield": "multimodal AI",
+      "n_papers": 1,
+      "total_citations": 30,
+      "mean_citations": 30.0,
+      "mean_cpy": 3.75
+    },
+    {
+      "subfield": "transfer learning",
+      "n_papers": 1,
+      "total_citations": 30,
+      "mean_citations": 30.0,
+      "mean_cpy": 3.75
+    }
+  ],
+  "top_authors": [
+    {
+      "name": "Zaharchuk G.",
+      "n_papers": 18,
+      "total_citations": 1085,
+      "mean_citations": 60.3,
+      "first_year": 2018,
+      "last_year": 2025
+    },
+    {
+      "name": "Filippi C.G.",
+      "n_papers": 6,
+      "total_citations": 968,
+      "mean_citations": 161.3,
+      "first_year": 2018,
+      "last_year": 2024
+    },
+    {
+      "name": "Wintermark M.",
+      "n_papers": 12,
+      "total_citations": 929,
+      "mean_citations": 77.4,
+      "first_year": 2018,
+      "last_year": 2025
+    },
+    {
+      "name": "Grinband J.",
+      "n_papers": 2,
+      "total_citations": 681,
+      "mean_citations": 340.5,
+      "first_year": 2018,
+      "last_year": 2018
+    },
+    {
+      "name": "Weinberg B.D.",
+      "n_papers": 2,
+      "total_citations": 681,
+      "mean_citations": 340.5,
+      "first_year": 2018,
+      "last_year": 2018
+    },
+    {
+      "name": "Su M.-Y.",
+      "n_papers": 2,
+      "total_citations": 681,
+      "mean_citations": 340.5,
+      "first_year": 2018,
+      "last_year": 2018
+    },
+    {
+      "name": "Yeom K.W.",
+      "n_papers": 7,
+      "total_citations": 636,
+      "mean_citations": 90.9,
+      "first_year": 2018,
+      "last_year": 2024
+    },
+    {
+      "name": "Tong E.",
+      "n_papers": 2,
+      "total_citations": 602,
+      "mean_citations": 301.0,
+      "first_year": 2018,
+      "last_year": 2020
+    },
+    {
+      "name": "Zeineh M.",
+      "n_papers": 2,
+      "total_citations": 543,
+      "mean_citations": 271.5,
+      "first_year": 2018,
+      "last_year": 2022
+    },
+    {
+      "name": "Chang P.D.",
+      "n_papers": 8,
+      "total_citations": 537,
+      "mean_citations": 67.1,
+      "first_year": 2018,
+      "last_year": 2026
+    },
+    {
+      "name": "Wang Z.",
+      "n_papers": 1,
+      "total_citations": 536,
+      "mean_citations": 536.0,
+      "first_year": 2018,
+      "last_year": 2018
+    },
+    {
+      "name": "Ball T.M.",
+      "n_papers": 1,
+      "total_citations": 536,
+      "mean_citations": 536.0,
+      "first_year": 2018,
+      "last_year": 2018
+    },
+    {
+      "name": "Liao C.",
+      "n_papers": 1,
+      "total_citations": 536,
+      "mean_citations": 536.0,
+      "first_year": 2018,
+      "last_year": 2018
+    },
+    {
+      "name": "Lv H.",
+      "n_papers": 1,
+      "total_citations": 536,
+      "mean_citations": 536.0,
+      "first_year": 2018,
+      "last_year": 2018
+    },
+    {
+      "name": "Goldstein-Piekarski A.N.",
+      "n_papers": 1,
+      "total_citations": 536,
+      "mean_citations": 536.0,
+      "first_year": 2018,
+      "last_year": 2018
+    }
+  ],
+  "top_institutions": [
+    {
+      "name": "Stanford University School of Medicine",
+      "country": "United States",
+      "n_papers": 23,
+      "total_citations": 1382,
+      "mean_citations": 60.1
+    },
+    {
+      "name": "Mayo Clinic",
+      "country": "United States",
+      "n_papers": 23,
+      "total_citations": 228,
+      "mean_citations": 9.9
+    },
+    {
+      "name": "Harvard Medical School",
+      "country": "United States",
+      "n_papers": 18,
+      "total_citations": 430,
+      "mean_citations": 23.9
+    },
+    {
+      "name": "Stanford University",
+      "country": "United States",
+      "n_papers": 15,
+      "total_citations": 1114,
+      "mean_citations": 74.3
+    },
+    {
+      "name": "Massachusetts General Hospital",
+      "country": "United States",
+      "n_papers": 14,
+      "total_citations": 505,
+      "mean_citations": 36.1
+    },
+    {
+      "name": "The University of Texas MD Anderson Cancer Center",
+      "country": "United States",
+      "n_papers": 12,
+      "total_citations": 78,
+      "mean_citations": 6.5
+    },
+    {
+      "name": "University of Pennsylvania",
+      "country": "United States",
+      "n_papers": 11,
+      "total_citations": 141,
+      "mean_citations": 12.8
+    },
+    {
+      "name": "University of California, San Francisco",
+      "country": "United States",
+      "n_papers": 10,
+      "total_citations": 432,
+      "mean_citations": 43.2
+    },
+    {
+      "name": "David Geffen School of Medicine at UCLA",
+      "country": "United States",
+      "n_papers": 10,
+      "total_citations": 172,
+      "mean_citations": 17.2
+    },
+    {
+      "name": "Siemens AG",
+      "country": "Germany",
+      "n_papers": 10,
+      "total_citations": 115,
+      "mean_citations": 11.5
+    },
+    {
+      "name": "Mayo Clinic in Jacksonville, Florida",
+      "country": "United States",
+      "n_papers": 10,
+      "total_citations": 113,
+      "mean_citations": 11.3
+    },
+    {
+      "name": "The Hospital for Sick Children",
+      "country": "Canada",
+      "n_papers": 8,
+      "total_citations": 311,
+      "mean_citations": 38.9
+    },
+    {
+      "name": "University of California, Irvine",
+      "country": "United States",
+      "n_papers": 8,
+      "total_citations": 297,
+      "mean_citations": 37.1
+    },
+    {
+      "name": "NYU Grossman School of Medicine",
+      "country": "United States",
+      "n_papers": 8,
+      "total_citations": 72,
+      "mean_citations": 9.0
+    },
+    {
+      "name": "Northwestern University Feinberg School of Medicine",
+      "country": "United States",
+      "n_papers": 8,
+      "total_citations": 70,
+      "mean_citations": 8.8
+    }
+  ]
+}

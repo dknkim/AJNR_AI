@@ -1,0 +1,51 @@
+term,early,recent,delta,total,direction
+ppv = positive predictive value,1,0,-1,1,rising
+adcmin = minimum adc,1,0,-1,1,rising
+ncet = noncontrast-enhanced tumors,1,0,-1,1,rising
+dca = decision curve analysis,1,0,-1,1,rising
+cet = contrast-enhanced tumor,1,0,-1,1,rising
+idh = isocitrate dehydrogenase,1,0,-1,1,rising
+lvo ¼ large-vessel occlusion,1,0,-1,1,rising
+hmcas ¼ hyperdense mca sign,1,0,-1,1,rising
+icc = intraclass correlation coefficient,1,0,-1,1,rising
+npv = negative predictive value,1,0,-1,1,rising
+auc = area under the curve,1,0,-1,1,rising
+radc = relative adc,1,0,-1,1,rising
+ce-t1wi = contrast-enhanced t1-weighted imaging,1,0,-1,1,rising
+fish = fluorescence in situ hybridization,1,0,-1,1,rising
+dl =deep learning,1,0,-1,1,rising
+alt =alternative lengthening of telomeres,1,0,-1,1,rising
+mevo ¼ medium-vessel occlusion,1,0,-1,1,rising
+auroc ¼ area under the receiver operating curve,1,0,-1,1,rising
+ngs = next-generation sequencing,1,0,-1,1,rising
+atrx = a-thalassemia/mental retardation syndrome x-linked gene,1,0,-1,1,rising
+dl ¼ deep learning,1,0,-1,1,rising
+adcn = normalized adc,1,0,-1,1,rising
+vasari =visually accessible rembrandt images,1,0,-1,1,rising
+cns5 = world health organization classification of central nervous system tumors,1,0,-1,1,rising
+eano = european association of neuro-oncology,1,0,-1,1,rising
+ppv = positive predictive value,1,0,-1,1,fading
+adcmin = minimum adc,1,0,-1,1,fading
+ncet = noncontrast-enhanced tumors,1,0,-1,1,fading
+dca = decision curve analysis,1,0,-1,1,fading
+cet = contrast-enhanced tumor,1,0,-1,1,fading
+idh = isocitrate dehydrogenase,1,0,-1,1,fading
+lvo ¼ large-vessel occlusion,1,0,-1,1,fading
+hmcas ¼ hyperdense mca sign,1,0,-1,1,fading
+icc = intraclass correlation coefficient,1,0,-1,1,fading
+npv = negative predictive value,1,0,-1,1,fading
+auc = area under the curve,1,0,-1,1,fading
+radc = relative adc,1,0,-1,1,fading
+ce-t1wi = contrast-enhanced t1-weighted imaging,1,0,-1,1,fading
+fish = fluorescence in situ hybridization,1,0,-1,1,fading
+dl =deep learning,1,0,-1,1,fading
+alt =alternative lengthening of telomeres,1,0,-1,1,fading
+mevo ¼ medium-vessel occlusion,1,0,-1,1,fading
+auroc ¼ area under the receiver operating curve,1,0,-1,1,fading
+ngs = next-generation sequencing,1,0,-1,1,fading
+atrx = a-thalassemia/mental retardation syndrome x-linked gene,1,0,-1,1,fading
+dl ¼ deep learning,1,0,-1,1,fading
+adcn = normalized adc,1,0,-1,1,fading
+vasari =visually accessible rembrandt images,1,0,-1,1,fading
+cns5 = world health organization classification of central nervous system tumors,1,0,-1,1,fading
+eano = european association of neuro-oncology,1,0,-1,1,fading

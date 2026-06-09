@@ -1,0 +1,31 @@
+afid,name,country,n_papers,total_citations,mean_citations
+60032838,Stanford University School of Medicine,United States,23,1382,60.08695652173913
+60005558,Mayo Clinic,United States,23,228,9.91304347826087
+60002746,Harvard Medical School,United States,18,430,23.88888888888889
+60012708,Stanford University,United States,15,1114,74.26666666666667
+60029929,Massachusetts General Hospital,United States,14,505,36.07142857142857
+60015023,The University of Texas MD Anderson Cancer Center,United States,12,78,6.5
+60006297,University of Pennsylvania,United States,11,141,12.818181818181818
+60023691,"University of California, San Francisco",United States,10,432,43.2
+60005247,David Geffen School of Medicine at UCLA,United States,10,172,17.2
+60028673,Siemens AG,Germany,10,115,11.5
+60002333,"Mayo Clinic in Jacksonville, Florida",United States,10,113,11.3
+60030319,The Hospital for Sick Children,Canada,8,311,38.875
+60007278,"University of California, Irvine",United States,8,297,37.125
+60024541,NYU Grossman School of Medicine,United States,8,72,9.0
+60013227,Northwestern University Feinberg School of Medicine,United States,8,70,8.75
+60017994,Yale School of Medicine,United States,8,37,4.625
+60031970,UCSF School of Medicine,United States,7,1022,146.0
+60002339,Emory University School of Medicine,United States,7,776,110.85714285714286
+60006240,University of Ulsan College of Medicine,South Korea,7,181,25.857142857142858
+60016849,University of Toronto,Canada,7,119,17.0
+60026952,"Mayo Clinic Scottsdale-Phoenix, Arizona",United States,7,108,15.428571428571429
+60084261,Siemens USA,United States,7,52,7.428571428571429
+60028548,University of Washington School of Medicine,United States,6,123,20.5
+60030118,The Children's Hospital of Philadelphia,United States,6,49,8.166666666666666
+60015615,Stanford Healthcare,United States,5,495,99.0
+60016782,Brigham and Women's Hospital,United States,5,236,47.2
+60024978,University of Utah School of Medicine,United States,5,201,40.2
+60002306,University of Calgary,Canada,5,163,32.6
+60016728,Yonsei University College of Medicine,South Korea,5,144,28.8
+60015481,University of Washington,United States,5,120,24.0

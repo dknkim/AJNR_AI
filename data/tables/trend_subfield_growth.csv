@@ -1,0 +1,25 @@
+subfield,total,early_count,recent_count,recent_minus_early,cagr
+Detection / classification (CADx),158,64,94,30,0.1598996025643411
+Image reconstruction / acceleration,57,16,41,25,
+Image segmentation,132,55,77,22,0.11200860970221638
+Quantitative imaging,149,64,85,21,0.13663881694331415
+Prognosis / outcome prediction,86,34,52,18,0.2085441515796309
+Explainability / trustworthy AI,34,8,26,18,
+Generative / diffusion models,28,10,18,8,0.0
+Large language models / NLP,34,14,20,6,0.04608191864321465
+Multimodal AI,12,3,9,6,0.0
+Federated / privacy-preserving learning,5,0,5,5,
+Foundation models / self-supervised,17,8,9,1,
+AI agents / autonomous systems,1,0,1,1,
+detection / classification (cadx),1,0,1,1,
+generative / diffusion models,1,0,1,1,
+detection / classification (CADx),8,4,4,0,
+Machine learning (general),1,1,0,-1,-1.0
+Machine learning,1,1,0,-1,
+explainability / trustworthy AI,3,2,1,-1,
+prognosis / outcome prediction,7,4,3,-1,
+multimodal AI,1,1,0,-1,
+transfer learning,1,1,0,-1,
+image reconstruction / acceleration,6,4,2,-2,
+image segmentation,15,9,6,-3,
+quantitative imaging,17,10,7,-3,

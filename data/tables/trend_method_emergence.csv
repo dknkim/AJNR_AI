@@ -1,0 +1,70 @@
+ai_methods,first_year,last_year,total,total_citations
+deep_learning_reconstruction,2025,2026,3,4
+quantum iterative reconstruction,2025,2026,3,10
+viz.ai,2025,2026,2,12
+artificial intelligence,2024,2026,3,12
+deep learning-based image reconstruction,2024,2026,3,21
+nnu-net,2024,2025,3,39
+artificial_intelligence,2024,2026,2,2
+ensemble learning,2024,2024,2,3
+gpt-4,2024,2025,2,9
+machine learning models,2024,2025,2,11
+radiomics feature extraction,2024,2026,2,8
+rapidai,2024,2026,2,13
+regression,2024,2025,2,7
+shapley_additive_explanations,2024,2025,2,4
+nnunet,2023,2026,5,6
+generative adversarial network,2023,2025,4,20
+least_absolute_shrinkage_and_selection_operator_regression,2023,2025,3,13
+5-fold cross-validation,2023,2024,2,16
+cyclegan,2023,2025,2,7
+feature_extraction,2023,2023,2,12
+least absolute shrinkage and selection operator,2023,2025,2,7
+machine_learning_model,2023,2023,2,12
+k-means_clustering,2022,2026,3,10
+3d segmentation,2022,2025,2,52
+deep learning-based reconstruction,2022,2025,2,28
+deep_learning_based_reconstruction,2022,2022,2,49
+generative_adversarial_network,2022,2025,2,18
+k-means clustering,2022,2025,2,31
+random_survival_forest,2022,2025,2,29
+random forest,2021,2025,7,148
+logistic_regression,2021,2025,6,54
+machine_learning,2021,2026,6,50
+deep learning reconstruction,2021,2026,5,72
+machine learning classifiers,2021,2026,4,78
+support_vector_machine,2021,2025,4,89
+aidoc,2021,2026,3,82
+convolutional_neural_networks,2021,2025,3,236
+extreme_gradient_boosting,2021,2026,3,29
+gradient_boosting,2021,2023,3,87
+cross_validation,2021,2022,2,56
+deepmedic,2021,2024,2,66
+feature_selection,2021,2021,2,59
+fine-tuning,2021,2025,2,28
+natural language processing,2021,2024,2,29
+pretraining,2021,2025,2,28
+sparse_regression,2021,2022,2,38
+logistic regression,2020,2026,9,166
+xgboost,2020,2025,4,85
+convolutional neural networks,2020,2022,2,35
+resnet-50,2020,2021,2,83
+deep learning,2019,2026,22,439
+convolutional_neural_network,2019,2026,13,511
+u-net,2019,2025,13,262
+random_forest,2019,2026,9,204
+deep_learning,2019,2025,6,82
+automated segmentation,2019,2026,4,65
+classification,2019,2026,3,47
+transfer_learning,2019,2025,3,54
+3d u-net,2019,2023,2,48
+conditional generative adversarial network,2019,2025,2,74
+linear regression,2019,2025,2,84
+neural network,2019,2024,2,170
+radiomics,2018,2025,11,634
+convolutional neural network,2018,2026,9,1038
+machine learning,2018,2026,8,615
+deep convolutional neural network,2018,2024,2,32
+principal component analysis,2018,2025,2,440
+support vector machine,2017,2026,8,156
+machine_learning_algorithms,2017,2019,2,89

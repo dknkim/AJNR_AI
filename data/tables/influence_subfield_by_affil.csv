@@ -1,0 +1,21 @@
+name,subfield,n_papers
+Stanford University School of Medicine,Detection / classification (CADx),16
+Mayo Clinic,Quantitative imaging,16
+Stanford University School of Medicine,Quantitative imaging,15
+Mayo Clinic,Image segmentation,13
+Mayo Clinic,Detection / classification (CADx),13
+Stanford University,Detection / classification (CADx),12
+Harvard Medical School,Quantitative imaging,12
+Harvard Medical School,Detection / classification (CADx),11
+Stanford University,Quantitative imaging,11
+Stanford University School of Medicine,Image segmentation,11
+Mayo Clinic,Image reconstruction / acceleration,10
+Stanford University School of Medicine,Prognosis / outcome prediction,10
+Harvard Medical School,Image segmentation,9
+Massachusetts General Hospital,Detection / classification (CADx),8
+The Hospital for Sick Children,Detection / classification (CADx),7
+Harvard Medical School,Prognosis / outcome prediction,7
+The University of Texas MD Anderson Cancer Center,Detection / classification (CADx),7
+Siemens AG,Image reconstruction / acceleration,7
+David Geffen School of Medicine at UCLA,Detection / classification (CADx),7
+Yale School of Medicine,Detection / classification (CADx),6

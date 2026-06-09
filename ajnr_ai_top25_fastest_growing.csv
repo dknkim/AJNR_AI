@@ -1,0 +1,26 @@
+year,cover_date,citedby_count,citations_per_year,title,authors,doi
+2018,2018-07-01,435,48.333333333333336,Deep-learning convolutional neural networks accurately classify genetic mutations in gliomas,Chang P.,10.3174/ajnr.A5667
+2018,2018-02-01,350,38.888888888888886,"Radiomics in Brain Tumor: Image Assessment, Quantitative Feature Descriptors, and Machine-Learning Approaches",Zhou M.,10.3174/ajnr.A5391
+2021,2021-01-01,228,38.0,Artificial intelligence and acute stroke imaging,Soun J.E.,10.3174/ajnr.A6883
+2018,2018-10-01,274,30.444444444444443,Deep learning in neuroradiology,Zaharchuk G.,10.3174/ajnr.A5543
+2018,2018-09-01,243,27.0,Hybrid 3D/2D convolutional neural network for hemorrhage evaluation on head CT,Chang P.D.,10.3174/ajnr.A5742
+2019,2019-01-01,160,20.0,Deep learning-based detection of intracranial aneurysms in 3D TOF-MRA,Faron A.,10.3174/ajnr.A5911
+2021,2021-02-01,92,15.333333333333334,Evaluation of artificial intelligence-powered identification of large-vessel occlusions in a comprehensive stroke center,Dovrat A.Y.,10.3174/ajnr.A6923
+2021,2021-02-01,92,15.333333333333334,Evaluation of artificial intelligence-powered identification of large-vessel occlusions in a comprehensive stroke center,Dovrat A.Y.,10.3174/ajnr.A6923
+2020,2020-01-01,106,15.142857142857142,Deep transfer learning and radiomics feature prediction of survival of patients with high-grade gliomas,Han W.,10.3174/ajnr.A6365
+2019,2019-01-01,120,15.0,Automated aspects on noncontrast CT scans in patients with acute ischemic stroke using machine learning,Kuang H.,10.3174/ajnr.A5889
+2021,2021-07-01,90,15.0,Ct cervical spine fracture detection using a convolutional neural network,Small J.E.,10.3174/ajnr.A7094
+2021,2021-08-01,79,13.166666666666666,Diagnostic accuracy and failure mode analysis of a deep learning algorithm for the detection of cervical spine fractures,Voter A.F.,10.3174/ajnr.A7179
+2020,2020-03-01,89,12.714285714285714,Artificial intelligence in the management of intracranial aneurysms: Current status and future perspectives,Shi Z.,10.3174/AJNR.A6468
+2021,2021-01-01,72,12.0,Noninvasive determination of IDH and 1p19q status of lower-grade gliomas using MRI radiomics: A systematic review,Bhandari A.P.,10.3174/ajnr.A6875
+2019,2019-01-01,90,11.25,Radiomics-based intracranial thrombus features on CT and CTA predict recanalization with intravenous alteplase in patients with acute ischemic stroke,Qiu W.,10.3174/ajnr.A5918
+2021,2021-12-01,66,11.0,"Deep learning enables 60% accelerated volumetric brain MRI while preserving quantitative performance: A prospective, multicenter, multireader trial",Bash S.,10.3174/ajnr.A7358
+2021,2021-02-01,65,10.833333333333334,Improved glioma grading using deep convolutional neural networks,Gutta S.,10.3174/ajnr.A6882
+2022,2022-03-01,52,10.4,Automated 3D Fetal Brain Segmentation Using an Optimized Deep Learning Approach,Zhao L.,10.3174/ajnr.A7419
+2019,2019-01-01,83,10.375,Convolutional neural network–based automated segmentation of the spinal cord and contusion injury: Deep learning biomarker correlates of motor impairment in acute spinal cord injury,McCoy D.B.,10.3174/ajnr.A6020
+2025,2025-07-01,20,10.0,A Review of the Opportunities and Challenges with Large Language Models in Radiology: The Road Ahead,Soni N.,10.3174/ajnr.A8589
+2021,2021-04-01,59,9.833333333333334,Radiomics of pediatric low-grade gliomas: Toward a pretherapeutic differentiation of BRAF-mutated and BRAF-fused tumors,Wagner M.W.,10.3174/AJNR.A6998
+2020,2020-09-01,66,9.428571428571429,Deep learning for pediatric posterior fossa tumor detection and classification: A multi-institutional study,Quon J.L.,10.3174/ajnr.A6704
+2021,2021-04-01,56,9.333333333333334,Machine learning-based prediction of small intracranial aneurysm rupture status using CTA-derived hemodynamics: A multicenter study,Shi Z.,10.3174/AJNR.A7034
+2019,2019-02-01,74,9.25,Improving the quality of synthetic FLAIR images with deep learning using a conditional generative adversarial network for pixel-by-pixel image translation,Hagiwara A.,10.3174/ajnr.A5927
+2020,2020-12-01,59,8.428571428571429,Development and validation of a deep learning-based automatic brain segmentation and classification algorithm for Alzheimer disease using 3D T1-weighted volumetric images,Suh C.H.,10.3174/ajnr.A6848

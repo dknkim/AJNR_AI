@@ -1,0 +1,25 @@
+subfield,n_papers,total_citations,mean_citations,mean_cpy
+Detection / classification (CADx),158,4554,28.82278481012658,4.55314446453687
+Quantitative imaging,149,4258,28.57718120805369,4.339453499520614
+Image segmentation,132,3936,29.818181818181817,4.526677489177489
+Prognosis / outcome prediction,86,2159,25.1046511627907,4.069158361018826
+Image reconstruction / acceleration,57,1166,20.45614035087719,3.7277708159287104
+Large language models / NLP,34,1268,37.294117647058826,5.84624183006536
+Explainability / trustworthy AI,34,949,27.91176470588235,4.238655462184873
+Generative / diffusion models,28,781,27.892857142857142,4.094756235827664
+Foundation models / self-supervised,17,295,17.352941176470587,3.6057422969187676
+quantitative imaging,17,316,18.58823529411765,3.1582166199813257
+image segmentation,15,315,21.0,3.6048677248677246
+Multimodal AI,12,424,35.333333333333336,5.864814814814815
+detection / classification (CADx),8,188,23.5,3.9625
+prognosis / outcome prediction,7,93,13.285714285714286,2.6612244897959187
+image reconstruction / acceleration,6,71,11.833333333333334,1.7101851851851853
+Federated / privacy-preserving learning,5,38,7.6,3.5333333333333337
+explainability / trustworthy AI,3,56,18.666666666666668,3.1
+AI agents / autonomous systems,1,12,12.0,3.0
+Machine learning,1,350,350.0,38.888888888888886
+Machine learning (general),1,16,16.0,1.6
+detection / classification (cadx),1,13,13.0,3.25
+generative / diffusion models,1,0,0.0,0.0
+multimodal AI,1,30,30.0,3.75
+transfer learning,1,30,30.0,3.75
