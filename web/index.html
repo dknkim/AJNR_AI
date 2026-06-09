@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Artificial Intelligence Research in AJNR (2017–2026) · Bibliometric Analysis</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+  :root{
+    --bg:#0b1020;--bg2:#0f1530;--panel:#141b38;--panel2:#1a2347;
+    --ink:#e8edff;--muted:#9aa6cf;--line:#27325e;
+    --accent:#5b8cff;--accent2:#21d4c2;--accent3:#ff7ab6;--accent4:#ffd166;--good:#3ddc97;
+    --warn:#ff9aa2;
+    --shadow:0 10px 40px rgba(0,0,0,.45);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Helvetica,Arial,sans-serif;
+    color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased;
+    background:
+      radial-gradient(1200px 600px at 80% -10%, rgba(91,140,255,.18), transparent 60%),
+      radial-gradient(1000px 500px at -10% 10%, rgba(33,212,194,.12), transparent 55%),
+      var(--bg);
+  }
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+
+  header.hero{padding:74px 0 46px;border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:.18em;
+    text-transform:uppercase;color:var(--accent2);font-weight:700;background:rgba(33,212,194,.08);
+    border:1px solid rgba(33,212,194,.25);padding:6px 14px;border-radius:999px;margin-bottom:22px}
+  h1.title{font-size:clamp(30px,5vw,52px);line-height:1.08;margin:0 0 16px;font-weight:800;letter-spacing:-.02em;
+    background:linear-gradient(120deg,#fff 10%,#bcd0ff 55%,#8fe9df 100%);
+    -webkit-background-clip:text;background-clip:text;color:transparent}
+  .subtitle{font-size:18px;color:var(--muted);max-width:780px;margin:0}
+  .scope{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+  .chip{font-size:13px;color:var(--ink);background:var(--panel);border:1px solid var(--line);
+    border-radius:999px;padding:7px 14px}
+  .chip b{color:var(--accent2)}
+
+  section{padding:56px 0;border-bottom:1px solid var(--line)}
+  .sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:8px}
+  .sec-num{font-size:14px;font-weight:800;color:var(--accent);background:rgba(91,140,255,.12);
+    border:1px solid rgba(91,140,255,.3);border-radius:8px;padding:3px 10px;flex:none}
+  h2{font-size:clamp(22px,3vw,30px);margin:0;font-weight:800;letter-spacing:-.01em}
+  .lede{color:var(--muted);max-width:840px;margin:6px 0 28px;font-size:15.5px}
+
+  .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .kpi{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);
+    border-radius:16px;padding:22px 20px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+  .kpi::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;
+    background:linear-gradient(90deg,var(--accent),var(--accent2))}
+  .kpi .v{font-size:34px;font-weight:800;letter-spacing:-.02em;line-height:1}
+  .kpi .l{color:var(--muted);font-size:13px;margin-top:8px}
+  .kpi.k2::before{background:linear-gradient(90deg,var(--accent2),var(--good))}
+  .kpi.k3::before{background:linear-gradient(90deg,var(--accent3),var(--accent4))}
+  .kpi.k4::before{background:linear-gradient(90deg,var(--accent4),var(--accent3))}
+
+  .card{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);
+    border-radius:18px;padding:22px 22px 18px;box-shadow:var(--shadow)}
+  .card h3{margin:0 0 4px;font-size:16px;font-weight:700}
+  .card .sub{color:var(--muted);font-size:13px;margin:0 0 16px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .chart-box{position:relative;height:340px}
+  .chart-box.tall{height:430px}
+
+  .tbl-wrap{overflow-x:auto;border-radius:14px;border:1px solid var(--line)}
+  table{width:100%;border-collapse:collapse;font-size:14px;min-width:520px}
+  thead th{background:var(--bg2);color:var(--muted);text-align:left;font-weight:600;font-size:12px;
+    letter-spacing:.04em;text-transform:uppercase;padding:12px 14px;border-bottom:1px solid var(--line);white-space:nowrap}
+  tbody td{padding:11px 14px;border-bottom:1px solid rgba(39,50,94,.55)}
+  tbody tr:last-child td{border-bottom:none}
+  tbody tr:hover{background:rgba(91,140,255,.06)}
+  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+  .tag{font-size:11.5px;color:var(--accent2);background:rgba(33,212,194,.1);
+    border:1px solid rgba(33,212,194,.22);border-radius:6px;padding:2px 8px;white-space:nowrap}
+  .tag.warn{color:var(--warn);background:rgba(255,154,162,.1);border-color:rgba(255,154,162,.25)}
+
+  .note{margin-top:18px;border-left:3px solid var(--accent2);background:rgba(33,212,194,.06);
+    border-radius:0 12px 12px 0;padding:14px 18px;color:#cfe0ff;font-size:14px}
+  .note.flag{border-left-color:var(--accent4);background:rgba(255,209,102,.07)}
+  .note b{color:#fff}
+
+  .papers{display:grid;gap:14px}
+  .paper{display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:center;
+    background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 20px}
+  .paper .pn{font-size:22px;font-weight:800;color:var(--accent);opacity:.55;min-width:34px}
+  .paper .pt{font-weight:600;font-size:15px}
+  .paper .pm{color:var(--muted);font-size:13px;margin-top:3px}
+  .paper .pc{text-align:right;flex:none}
+  .paper .pc .n{font-size:24px;font-weight:800;color:var(--accent2);line-height:1}
+  .paper .pc .u{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+
+  /* clinical application cards */
+  .apps{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  .app{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:20px 22px;position:relative;overflow:hidden}
+  .app::before{content:"";position:absolute;inset:0 auto 0 0;width:4px;background:var(--accent)}
+  .app.c2::before{background:var(--accent3)} .app.c3::before{background:var(--accent2)}
+  .app.c4::before{background:var(--accent4)} .app.c5::before{background:var(--good)}
+  .app h4{margin:0 0 3px;font-size:17px;font-weight:800}
+  .app .domain{color:var(--muted);font-size:12.5px;margin:0 0 14px;text-transform:uppercase;letter-spacing:.05em}
+  .app ul{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+  .app li{display:flex;justify-content:space-between;gap:14px;font-size:13.5px;align-items:baseline}
+  .app li .ti{color:var(--ink)} .app li .yr{color:var(--muted)}
+  .app li .ci{font-weight:800;color:var(--accent2);font-variant-numeric:tabular-nums;flex:none}
+
+  .recs{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .rec{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+  .rec h4{margin:0 0 6px;font-size:15px;display:flex;align-items:center;gap:9px}
+  .rec h4 .dot{width:9px;height:9px;border-radius:50%;background:var(--accent3);flex:none}
+  .rec p{margin:0;color:var(--muted);font-size:13.5px}
+  .rec .fix{margin-top:9px;font-size:13px;color:var(--good)}
+
+  footer{padding:38px 0 60px;color:var(--muted);font-size:13px}
+  .toc{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+  .toc a{font-size:13px;color:var(--muted);text-decoration:none;border:1px solid var(--line);
+    background:var(--panel);border-radius:8px;padding:6px 12px;transition:.15s}
+  .toc a:hover{color:#fff;border-color:var(--accent);background:rgba(91,140,255,.1)}
+
+  @media(max-width:880px){
+    .kpis{grid-template-columns:repeat(2,1fr)}
+    .grid2,.recs,.apps{grid-template-columns:1fr}
+    .paper{grid-template-columns:auto 1fr}
+    .paper .pc{grid-column:2;text-align:left}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">● Bibliometric Analysis · Neuroradiology Artificial Intelligence</span>
+    <h1 class="title">Artificial Intelligence Research in the<br><em>American Journal of Neuroradiology</em></h1>
+    <p class="subtitle">A decade of artificial intelligence in neuroradiology — from proof-of-concept to clinical decision support. Tracking publication volume, citation impact, the models and methods in use, clinical application areas, methodological rigor, and the people and places driving the field.</p>
+    <div class="scope">
+      <span class="chip"><b>229</b> papers</span>
+      <span class="chip"><b>2017–2026</b> window</span>
+      <span class="chip"><b>5,456</b> total citations</span>
+      <span class="chip"><b>23.83</b> mean citations per paper</span>
+      <span class="chip"><b>9</b> subfields tracked</span>
+    </div>
+    <nav class="toc">
+      <a href="#evolution">Year-by-Year</a>
+      <a href="#growth">Subfield Growth</a>
+      <a href="#subfields">Top Subfields</a>
+      <a href="#papers">Most-Cited Papers</a>
+      <a href="#models">Models &amp; Methods</a>
+      <a href="#clinical">Clinical Application Areas</a>
+      <a href="#rigor">Open Science</a>
+      <a href="#people">Authors &amp; Institutions</a>
+      <a href="#gaps">Gaps &amp; Recommendations</a>
+    </nav>
+  </div>
+</header>
+
+<!-- EXEC SUMMARY -->
+<section id="summary">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">01</span><h2>Executive Summary</h2></div>
+    <p class="lede">Artificial intelligence research in the American Journal of Neuroradiology has matured from a nascent field into a dominant research area — exponential growth in output paired with significant, front-loaded citation impact.</p>
+    <div class="kpis">
+      <div class="kpi"><div class="v">229</div><div class="l">Artificial intelligence papers (2017–2026)</div></div>
+      <div class="kpi k2"><div class="v">5,456</div><div class="l">Total citations accrued</div></div>
+      <div class="kpi k3"><div class="v">55</div><div class="l">Papers in 2025 — peak volume (9× 2017)</div></div>
+      <div class="kpi k4"><div class="v">2021</div><div class="l">Peak impact year (235.7 age-adjusted citations)</div></div>
+    </div>
+    <div class="note" style="margin-top:24px">
+      <b>The core story:</b> Publication volume surged from 6 papers (2017) to 55 (2025), while citation <i>impact</i> peaked earlier in 2021 — foundational work on clinical translation and multimodal integration gained traction before the volume-driven expansion. The field has shifted from early exploratory studies toward clinically focused applications: <b>artificial intelligence moving from proof-of-concept to clinical decision support.</b>
+    </div>
+  </div>
+</section>
+
+<!-- YEAR BY YEAR -->
+<section id="evolution">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">02</span><h2>Year-by-Year Evolution</h2></div>
+    <p class="lede">Volume and citation impact diverge: output keeps climbing while age-adjusted impact crested in 2021 and again shows resilience in 2025. Recent years naturally show fewer raw citations — papers have had too little time to accumulate them.</p>
+
+    <div class="grid2">
+      <div class="card">
+        <h3>Publications versus Citation Impact</h3>
+        <p class="sub">Bars: papers per year · Line: age-adjusted citations</p>
+        <div class="chart-box"><canvas id="chEvolution"></canvas></div>
+      </div>
+      <div class="card">
+        <h3>Raw Citations by Publication Year</h3>
+        <p class="sub">Total citations accrued by papers from each year</p>
+        <div class="chart-box"><canvas id="chRaw"></canvas></div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:22px">
+      <h3>Detailed Yearly Breakdown</h3>
+      <p class="sub">Counts, citations, and the leading subfields each year</p>
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr>
+            <th>Year</th><th class="num">Papers</th><th class="num">Raw Citations</th>
+            <th class="num">Age-Adjusted Citations</th><th>Top Subfields (by count)</th>
+          </tr></thead>
+          <tbody>
+            <tr><td><b>2017</b></td><td class="num">6</td><td class="num">198</td><td class="num">19.8</td><td>Quantitative imaging (6) · Detection / classification (5) · Image segmentation (5)</td></tr>
+            <tr><td><b>2018</b></td><td class="num">5</td><td class="num">1,321</td><td class="num">146.8</td><td>Detection / classification (5) · Image segmentation (4) · Quantitative imaging (4)</td></tr>
+            <tr><td><b>2019</b></td><td class="num">14</td><td class="num">870</td><td class="num">108.8</td><td>Quantitative imaging (12) · Image segmentation (11) · Detection / classification (9)</td></tr>
+            <tr><td><b>2020</b></td><td class="num">14</td><td class="num">621</td><td class="num">88.7</td><td>Quantitative imaging (12) · Image segmentation (10) · Detection / classification (9)</td></tr>
+            <tr><td><b>2021</b></td><td class="num">30</td><td class="num">1,414</td><td class="num">235.7</td><td>Detection / classification (25) · Quantitative imaging (17) · Image segmentation (14)</td></tr>
+            <tr><td><b>2022</b></td><td class="num">22</td><td class="num">415</td><td class="num">83.0</td><td>Quantitative imaging (13) · Image segmentation (11) · Prognosis / outcome prediction (11)</td></tr>
+            <tr><td><b>2023</b></td><td class="num">23</td><td class="num">196</td><td class="num">49.0</td><td>Image segmentation (16) · Detection / classification (15) · Quantitative imaging (12)</td></tr>
+            <tr><td><b>2024</b></td><td class="num">34</td><td class="num">235</td><td class="num">78.3</td><td>Detection / classification (27) · Image segmentation (19) · Quantitative imaging (17)</td></tr>
+            <tr><td><b>2025</b></td><td class="num">55</td><td class="num">168</td><td class="num">84.0</td><td>Quantitative imaging (37) · Detection / classification (33) · Image segmentation (29)</td></tr>
+            <tr><td><b>2026</b></td><td class="num">26</td><td class="num">18</td><td class="num">18.0</td><td>Detection / classification (19) · Quantitative imaging (19) · Image segmentation (13)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="note">
+        <b>Top-cited paper per year</b> — 2018: <i>Deep-learning convolutional neural networks classify genetic mutations in gliomas</i> (437) · 2019: <i>Deep learning detection of intracranial aneurysms in three-dimensional time-of-flight MR angiography</i> (160) · 2020: <i>Deep transfer learning and radiomics for high-grade glioma survival</i> (107) · 2021: <i>Artificial intelligence and acute stroke imaging</i> (228) · 2025: <i>Large language models in radiology: the road ahead</i> (21).
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GROWTH -->
+<section id="growth">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">03</span><h2>Subfield Growth &amp; Decline</h2></div>
+    <p class="lede">Prognosis / outcome prediction is the fastest-growing subfield, propelled by artificial intelligence's role in personalized treatment planning. A handful of fragmented, lowercase-duplicate labels nominally "declined" to zero — a taxonomy artifact rather than a real trend.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Fastest-Growing Subfields</h3>
+        <p class="sub">Compound annual growth rate (percent)</p>
+        <div class="chart-box"><canvas id="chCagr"></canvas></div>
+      </div>
+      <div class="card">
+        <h3>Early versus Recent Paper Counts</h3>
+        <p class="sub">Papers in the early period versus the recent period</p>
+        <div class="chart-box"><canvas id="chEarlyRecent"></canvas></div>
+      </div>
+    </div>
+    <div class="note flag">
+      <b>Declining labels are duplicates, not real decline.</b> "Machine learning (general)", "Machine learning", and a lowercase "multimodal AI" each fell from 1 to 0 papers. The main <b>Multimodal AI</b> subfield (12 papers) is actually growing. This labeling inconsistency is addressed in the recommendations.
+    </div>
+  </div>
+</section>
+
+<!-- SUBFIELDS -->
+<section id="subfields">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">04</span><h2>Most-Cited Subfields</h2></div>
+    <p class="lede">High-volume subfields dominate <i>total</i> citations; high-impact subfields (large language models / natural language processing, multimodal artificial intelligence) lead on <i>mean</i> citations per paper. The top three — detection / classification, quantitative imaging, image segmentation — make up roughly 80% of the corpus.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Total Citations by Subfield</h3>
+        <p class="sub">Volume-driven scholarly footprint</p>
+        <div class="chart-box tall"><canvas id="chSubTotal"></canvas></div>
+      </div>
+      <div class="card">
+        <h3>Mean Citations per Paper</h3>
+        <p class="sub">Impact density — niche subfields punch above their weight</p>
+        <div class="chart-box tall"><canvas id="chSubMean"></canvas></div>
+      </div>
+    </div>
+    <div class="card" style="margin-top:22px">
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr><th>Subfield</th><th class="num">Papers</th><th class="num">Total Citations</th><th class="num">Mean Citations</th></tr></thead>
+          <tbody>
+            <tr><td>Detection / classification (computer-aided diagnosis)</td><td class="num">158</td><td class="num">4,554</td><td class="num">28.82</td></tr>
+            <tr><td>Quantitative imaging</td><td class="num">149</td><td class="num">4,258</td><td class="num">28.58</td></tr>
+            <tr><td>Image segmentation</td><td class="num">132</td><td class="num">3,936</td><td class="num">29.82</td></tr>
+            <tr><td>Prognosis / outcome prediction</td><td class="num">86</td><td class="num">2,159</td><td class="num">25.10</td></tr>
+            <tr><td>Large language models / natural language processing <span class="tag">highest mean</span></td><td class="num">34</td><td class="num">1,268</td><td class="num">37.29</td></tr>
+            <tr><td>Image reconstruction / acceleration</td><td class="num">57</td><td class="num">1,166</td><td class="num">20.46</td></tr>
+            <tr><td>Explainability / trustworthy artificial intelligence</td><td class="num">34</td><td class="num">949</td><td class="num">27.91</td></tr>
+            <tr><td>Generative / diffusion models</td><td class="num">28</td><td class="num">781</td><td class="num">27.89</td></tr>
+            <tr><td>Multimodal artificial intelligence</td><td class="num">12</td><td class="num">424</td><td class="num">35.33</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAPERS -->
+<section id="papers">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">05</span><h2>Most-Cited Papers</h2></div>
+    <p class="lede">The most influential work centers on high-impact clinical translation — convolutional neural networks and radiomics applied to stroke and tumor characterization. Four of the top five were published in the field's 2018 foundational moment.</p>
+    <div class="papers">
+      <div class="paper">
+        <div class="pn">01</div>
+        <div><div class="pt">Deep-learning convolutional neural networks accurately classify genetic mutations in gliomas</div>
+        <div class="pm">2018 · Integrates genetic classification, explainability and multimodal artificial intelligence — foundational for artificial-intelligence-driven oncology</div></div>
+        <div class="pc"><div class="n">437</div><div class="u">citations</div></div>
+      </div>
+      <div class="paper">
+        <div class="pn">02</div>
+        <div><div class="pt">Radiomics in brain tumor: image assessment, quantitative feature descriptors, and machine-learning approaches</div>
+        <div class="pm">2018 · Seminal radiomics review bridging imaging and machine learning for tumor characterization</div></div>
+        <div class="pc"><div class="n">350</div><div class="u">citations</div></div>
+      </div>
+      <div class="paper">
+        <div class="pn">03</div>
+        <div><div class="pt">Deep learning in neuroradiology</div>
+        <div class="pm">2018 · Comprehensive overview — established artificial intelligence as a core neuroradiology discipline</div></div>
+        <div class="pc"><div class="n">274</div><div class="u">citations</div></div>
+      </div>
+      <div class="paper">
+        <div class="pn">04</div>
+        <div><div class="pt">Hybrid three-dimensional / two-dimensional convolutional neural network for hemorrhage evaluation on head computed tomography</div>
+        <div class="pm">2018 · Early clinical translation for acute stroke; high adoption in emergency settings</div></div>
+        <div class="pc"><div class="n">244</div><div class="u">citations</div></div>
+      </div>
+      <div class="paper">
+        <div class="pn">05</div>
+        <div><div class="pt">Artificial intelligence and acute stroke imaging</div>
+        <div class="pm">2021 · Real-world clinical deployment — reflects field maturation</div></div>
+        <div class="pc"><div class="n">228</div><div class="u">citations</div></div>
+      </div>
+    </div>
+    <div class="note"><b>Common thread:</b> all integrate clinical translation, use high-impact methods (convolutional neural networks, radiomics), and target high-need applications (stroke, tumor classification).</div>
+  </div>
+</section>
+
+<!-- MODELS & METHODS (replaces "What Drives Citations") -->
+<section id="models">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">06</span><h2>Models &amp; Methods</h2></div>
+    <p class="lede">What kind of artificial intelligence does the field actually use? At the highest level the corpus splits into deep learning, classical machine learning, radiomics (feature-based), and other. Underneath, specific architectures and algorithms differ sharply in citation impact. Papers may employ more than one approach, so counts overlap rather than partition the corpus.</p>
+
+    <div class="grid2">
+      <div class="card">
+        <h3>Model Family Landscape</h3>
+        <p class="sub">Papers employing each model family · colored by high-level group</p>
+        <div class="chart-box tall"><canvas id="chFamilies"></canvas></div>
+        <div class="note">
+          <b>Deep learning</b> (blue) dominates by volume — convolutional neural networks alone appear in 131 papers. <b>Classical machine learning</b> (teal) remains substantial (92 papers), while <b>radiomics</b> (pink) is the highest-impact family by mean citations (30.4).
+        </div>
+      </div>
+      <div class="card">
+        <h3>High-Level Groups — Mean Citations</h3>
+        <p class="sub">Average citations per paper, by approach</p>
+        <div class="chart-box tall"><canvas id="chGroupMean"></canvas></div>
+        <div class="note">
+          Newer deep-learning variants (transformers / large language models, vision transformers, generative adversarial networks) still carry <b>low mean citations</b> — partly because most are recent and have had little time to accumulate citations.
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:22px">
+      <h3>Specific Methods — Which Techniques Drive Citations</h3>
+      <p class="sub">Mean citations per paper for named methods · marker size reflects number of papers</p>
+      <div class="chart-box"><canvas id="chMethods"></canvas></div>
+      <div class="note flag">
+        Several extreme means rest on very few papers — <b>principal component analysis</b> (220.0) spans just 2 papers and <b>convolutional neural network</b> (115.3) just 9. Treat low-count means as suggestive, not definitive. The broad, robust workhorses are deep learning (22 papers), U-Net (13), radiomics (11), random forest (9), logistic regression (9) and support vector machine (8).
+      </div>
+    </div>
+
+    <div class="grid2" style="margin-top:22px">
+      <div class="card">
+        <h3>Model Families — Detail</h3>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>Model family</th><th class="num">Papers</th><th class="num">Total</th><th class="num">Mean</th></tr></thead>
+            <tbody>
+              <tr><td>Convolutional neural network <span class="tag">deep learning</span></td><td class="num">131</td><td class="num">3,628</td><td class="num">27.7</td></tr>
+              <tr><td>Classical machine learning</td><td class="num">92</td><td class="num">2,462</td><td class="num">26.8</td></tr>
+              <tr><td>Radiomics <span class="tag">highest mean</span></td><td class="num">40</td><td class="num">1,214</td><td class="num">30.4</td></tr>
+              <tr><td>Other</td><td class="num">44</td><td class="num">563</td><td class="num">12.8</td></tr>
+              <tr><td>Transformer / large language model <span class="tag">deep learning</span></td><td class="num">15</td><td class="num">146</td><td class="num">9.7</td></tr>
+              <tr><td>Generative adversarial network <span class="tag">deep learning</span></td><td class="num">7</td><td class="num">91</td><td class="num">13.0</td></tr>
+              <tr><td>Vision transformer <span class="tag">deep learning</span></td><td class="num">11</td><td class="num">78</td><td class="num">7.1</td></tr>
+              <tr><td>Ensemble learning</td><td class="num">3</td><td class="num">55</td><td class="num">18.3</td></tr>
+              <tr><td>Recurrent neural network <span class="tag">deep learning</span></td><td class="num">2</td><td class="num">17</td><td class="num">8.5</td></tr>
+              <tr><td>Clustering</td><td class="num">2</td><td class="num">3</td><td class="num">1.5</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Specific Methods — Detail</h3>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>Method</th><th class="num">Papers</th><th class="num">Total</th><th class="num">Mean</th></tr></thead>
+            <tbody>
+              <tr><td>Principal component analysis <span class="tag warn">low n</span></td><td class="num">2</td><td class="num">440</td><td class="num">220.0</td></tr>
+              <tr><td>Convolutional neural network</td><td class="num">9</td><td class="num">1,038</td><td class="num">115.3</td></tr>
+              <tr><td>Neural network <span class="tag warn">low n</span></td><td class="num">2</td><td class="num">170</td><td class="num">85.0</td></tr>
+              <tr><td>Machine learning</td><td class="num">8</td><td class="num">615</td><td class="num">76.9</td></tr>
+              <tr><td>Radiomics</td><td class="num">11</td><td class="num">634</td><td class="num">57.6</td></tr>
+              <tr><td>Random forest</td><td class="num">9</td><td class="num">204</td><td class="num">22.7</td></tr>
+              <tr><td>U-Net</td><td class="num">13</td><td class="num">262</td><td class="num">20.2</td></tr>
+              <tr><td>Deep learning</td><td class="num">22</td><td class="num">439</td><td class="num">20.0</td></tr>
+              <tr><td>Support vector machine</td><td class="num">8</td><td class="num">156</td><td class="num">19.5</td></tr>
+              <tr><td>Logistic regression</td><td class="num">9</td><td class="num">166</td><td class="num">18.4</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLINICAL APPLICATION AREAS -->
+<section id="clinical">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">07</span><h2>Clinical Application Areas</h2></div>
+    <p class="lede">Mapping the field by clinical target — which diseases and body systems the highest-impact work addresses. Neuro-oncology and cerebrovascular disease anchor the most-cited cluster, with pediatric / fetal imaging and broad cross-cutting reviews rounding out the landscape.</p>
+    <div class="apps">
+      <div class="app c1">
+        <h4>Neuro-oncology</h4>
+        <p class="domain">Glioma · brain tumor · genetic classification</p>
+        <ul>
+          <li><span class="ti">Convolutional neural networks classify genetic mutations in gliomas <span class="yr">· 2018</span></span><span class="ci">437</span></li>
+          <li><span class="ti">Radiomics in brain tumor: features &amp; machine learning <span class="yr">· 2018</span></span><span class="ci">350</span></li>
+          <li><span class="ti">Deep transfer learning &amp; radiomics for high-grade glioma survival <span class="yr">· 2020</span></span><span class="ci">107</span></li>
+        </ul>
+      </div>
+      <div class="app c2">
+        <h4>Cerebrovascular &amp; Stroke</h4>
+        <p class="domain">Acute stroke · hemorrhage · clinical deployment</p>
+        <ul>
+          <li><span class="ti">Hybrid convolutional neural network for hemorrhage on head computed tomography <span class="yr">· 2018</span></span><span class="ci">244</span></li>
+          <li><span class="ti">Artificial intelligence and acute stroke imaging <span class="yr">· 2021</span></span><span class="ci">228</span></li>
+          <li><span class="ti">Stroke augmented intelligence &amp; communications platform <span class="yr">· 2023</span></span><span class="ci">32</span></li>
+        </ul>
+      </div>
+      <div class="app c3">
+        <h4>Vascular &amp; Aneurysm</h4>
+        <p class="domain">Intracranial aneurysm · angiography</p>
+        <ul>
+          <li><span class="ti">Deep-learning detection of intracranial aneurysms in time-of-flight MR angiography <span class="yr">· 2019</span></span><span class="ci">160</span></li>
+        </ul>
+      </div>
+      <div class="app c4">
+        <h4>Pediatric &amp; Fetal</h4>
+        <p class="domain">Fetal brain · pediatric brain tumors</p>
+        <ul>
+          <li><span class="ti">Automated three-dimensional fetal brain segmentation with deep learning <span class="yr">· 2022</span></span><span class="ci">52</span></li>
+          <li><span class="ti">nnU-Net and DeepMedic for autosegmentation of pediatric brain tumors <span class="yr">· 2024</span></span><span class="ci">28</span></li>
+        </ul>
+      </div>
+      <div class="app c5">
+        <h4>Cross-Cutting &amp; Methods</h4>
+        <p class="domain">Field reviews · large language models · acceleration</p>
+        <ul>
+          <li><span class="ti">Deep learning in neuroradiology (review) <span class="yr">· 2018</span></span><span class="ci">274</span></li>
+          <li><span class="ti">Large language models in radiology: the road ahead <span class="yr">· 2025</span></span><span class="ci">21</span></li>
+          <li><span class="ti">Deep-learning–based acceleration in MRI <span class="yr">· 2026</span></span><span class="ci">5</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="note flag">
+      <b>How to read this:</b> the source data does not include a structured per-disease tag, so this is a qualitative map built from the clinical targets of the most-cited and annual-leading papers — <b>not</b> a corpus-wide frequency count. A dedicated disease-tagging pass over all 229 papers would be needed to quantify prevalence and citation share per disease.
+    </div>
+  </div>
+</section>
+
+<!-- RIGOR -->
+<section id="rigor">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">08</span><h2>Methodological Rigor &amp; Open Science</h2></div>
+    <p class="lede">Gradual maturation: external validation and multi-center data rose from 0% (2017) to peaks around 2021–2024. But <b>open code remains near zero</b> and <b>open data is entirely absent</b> across the decade — the field's clearest unmet standard.</p>
+    <div class="card">
+      <h3>Open-Science Indicators Over Time</h3>
+      <p class="sub">Share of papers per year meeting each rigor criterion (percent)</p>
+      <div class="chart-box tall"><canvas id="chRigor"></canvas></div>
+      <div class="note">External validation and multi-center adoption climbed steadily; code availability first appears only in 2025 (3.6%); open data never exceeds 0%. The 2025 code uptick signals nascent — but fragile — open-science adoption.</div>
+    </div>
+  </div>
+</section>
+
+<!-- PEOPLE -->
+<section id="people">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">09</span><h2>Influential Authors &amp; Institutions</h2></div>
+    <p class="lede">A few authors drive outsized influence through concentrated, high-impact work. Leadership is dominated by United States institutions and split between high-volume contributors and high-impact-per-paper centers.</p>
+
+    <div class="grid2">
+      <div class="card">
+        <h3>Top Authors — Output versus Impact</h3>
+        <p class="sub">Bars: total citations · Line: mean citations per paper</p>
+        <div class="chart-box"><canvas id="chAuthors"></canvas></div>
+      </div>
+      <div class="card">
+        <h3>Top Institutions — Volume versus Mean Impact</h3>
+        <p class="sub">Bars: papers · Line: mean citations per paper</p>
+        <div class="chart-box"><canvas id="chInst"></canvas></div>
+      </div>
+    </div>
+
+    <div class="grid2" style="margin-top:22px">
+      <div class="card">
+        <h3>Authors</h3>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>Author</th><th class="num">Papers</th><th class="num">Citations</th><th class="num">Mean</th><th>Active</th></tr></thead>
+            <tbody>
+              <tr><td>Zaharchuk G.</td><td class="num">18</td><td class="num">1,085</td><td class="num">60.3</td><td>2018–2025</td></tr>
+              <tr><td>Filippi C.G. <span class="tag">top mean</span></td><td class="num">6</td><td class="num">968</td><td class="num">161.3</td><td>2018–2024</td></tr>
+              <tr><td>Wintermark M.</td><td class="num">12</td><td class="num">929</td><td class="num">77.4</td><td>2018–2025</td></tr>
+              <tr><td>Yeom K.W.</td><td class="num">7</td><td class="num">636</td><td class="num">90.9</td><td>2018–2024</td></tr>
+              <tr><td>Chang P.D.</td><td class="num">8</td><td class="num">537</td><td class="num">67.1</td><td>2018–2026</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Institutions</h3>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>Institution</th><th class="num">Papers</th><th class="num">Citations</th><th class="num">Mean</th></tr></thead>
+            <tbody>
+              <tr><td>Stanford University School of Medicine</td><td class="num">23</td><td class="num">1,382</td><td class="num">60.1</td></tr>
+              <tr><td>Mayo Clinic <span class="tag warn">high volume, low impact</span></td><td class="num">23</td><td class="num">228</td><td class="num">9.9</td></tr>
+              <tr><td>Harvard Medical School</td><td class="num">18</td><td class="num">430</td><td class="num">23.9</td></tr>
+              <tr><td>Stanford University <span class="tag">top mean</span></td><td class="num">15</td><td class="num">1,114</td><td class="num">74.3</td></tr>
+              <tr><td>Massachusetts General Hospital</td><td class="num">14</td><td class="num">505</td><td class="num">36.1</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GAPS -->
+<section id="gaps">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">10</span><h2>Notable Gaps &amp; Recommendations</h2></div>
+    <p class="lede">Four structural gaps emerge — and each maps to a concrete recommendation for the American Journal of Neuroradiology and the wider neuroradiology artificial intelligence community.</p>
+    <div class="recs">
+      <div class="rec">
+        <h4><span class="dot"></span>Open-science deficit</h4>
+        <p>Open code availability remains near zero (3.6% in 2025); open data is entirely absent across the decade.</p>
+        <div class="fix">→ Prioritize open-science mandates in artificial intelligence submissions.</div>
+      </div>
+      <div class="rec">
+        <h4><span class="dot"></span>Subfield fragmentation</h4>
+        <p>Duplicate and case-variant labels (for example, "detection / classification" appearing in several casings) distort growth analysis.</p>
+        <div class="fix">→ Standardize subfield taxonomy in future bibliometrics.</div>
+      </div>
+      <div class="rec">
+        <h4><span class="dot"></span>Emerging-trend blind spot</h4>
+        <p>No reliable data on emerging keywords, methods, or benchmarks could be extracted from the corpus.</p>
+        <div class="fix">→ Track keyword bursts and benchmark adoption longitudinally.</div>
+      </div>
+      <div class="rec">
+        <h4><span class="dot"></span>Geographic concentration</h4>
+        <p>United States institutions dominate (14 of 15 top institutions); no non-United-States leaders appear in the rankings.</p>
+        <div class="fix">→ Encourage global collaboration in artificial intelligence neuroradiology research.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Source: <code>ajnr_ai_trends_report_thinking.md</code> and <code>ajnr_ai_trends_report_thinking_facts.json</code> · Bibliometric analysis of artificial intelligence research in the American Journal of Neuroradiology, 2017–2026 (229 papers, 5,456 citations). Charts rendered client-side with Chart.js. Recent-year citation counts are immature and not directly comparable to earlier years. The Clinical Application Areas section is a qualitative map derived from the most-cited papers, not a structured per-disease count.
+  </div>
+</footer>
+
+<script>
+const F={ink:'#e8edff',muted:'#9aa6cf',line:'#27325e',
+  accent:'#5b8cff',accent2:'#21d4c2',accent3:'#ff7ab6',accent4:'#ffd166',good:'#3ddc97',warn:'#ff9aa2'};
+Chart.defaults.color=F.muted;
+Chart.defaults.font.family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Inter,sans-serif";
+Chart.defaults.font.size=12;
+const grid={color:'rgba(39,50,94,.55)'};
+const noGrid={color:'transparent'};
+function grad(ctx,c1,c2){const g=ctx.createLinearGradient(0,0,0,360);g.addColorStop(0,c1);g.addColorStop(1,c2);return g;}
+const years=['2017','2018','2019','2020','2021','2022','2023','2024','2025','2026'];
+
+/* Evolution */
+new Chart(document.getElementById('chEvolution'),{
+  data:{labels:years,datasets:[
+    {type:'bar',label:'Papers',data:[6,5,14,14,30,22,23,34,55,26],
+     backgroundColor:'rgba(91,140,255,.55)',borderColor:F.accent,borderWidth:1,borderRadius:6,yAxisID:'y',order:2},
+    {type:'line',label:'Age-adjusted citations',data:[19.8,146.8,108.8,88.7,235.7,83.0,49.0,78.3,84.0,18.0],
+     borderColor:F.accent2,backgroundColor:F.accent2,tension:.35,borderWidth:3,pointRadius:4,yAxisID:'y1',order:1}
+  ]},
+  options:{maintainAspectRatio:false,interaction:{mode:'index',intersect:false},
+    plugins:{legend:{labels:{usePointStyle:true,boxWidth:8}}},
+    scales:{y:{position:'left',grid:grid,title:{display:true,text:'Papers'}},
+      y1:{position:'right',grid:noGrid,title:{display:true,text:'Age-adjusted citations'}},x:{grid:noGrid}}}
+});
+
+/* Raw citations */
+new Chart(document.getElementById('chRaw'),{
+  type:'bar',
+  data:{labels:years,datasets:[{label:'Raw citations',data:[198,1321,870,621,1414,415,196,235,168,18],
+    backgroundColor:(c)=>grad(c.chart.ctx,'rgba(255,209,102,.9)','rgba(255,122,182,.55)'),borderRadius:6}]},
+  options:{maintainAspectRatio:false,plugins:{legend:{display:false}},
+    scales:{y:{grid:grid,beginAtZero:true},x:{grid:noGrid}}}
+});
+
+/* CAGR */
+new Chart(document.getElementById('chCagr'),{
+  type:'bar',
+  data:{labels:['Prognosis / outcome prediction','Detection / classification','Quantitative imaging','Image segmentation'],
+    datasets:[{label:'Compound annual growth rate',data:[20.85,15.99,13.66,11.20],
+      backgroundColor:[F.accent3,F.accent,F.accent2,F.good],borderRadius:6}]},
+  options:{indexAxis:'y',maintainAspectRatio:false,plugins:{legend:{display:false},
+    tooltip:{callbacks:{label:(c)=>c.parsed.x+'% compound annual growth rate'}}},
+    scales:{x:{grid:grid,beginAtZero:true,ticks:{callback:v=>v+'%'}},y:{grid:noGrid}}}
+});
+
+/* Early vs recent counts */
+new Chart(document.getElementById('chEarlyRecent'),{
+  type:'bar',
+  data:{labels:['Detection / classification','Quantitative imaging','Image segmentation','Prognosis / outcome prediction','Image reconstruction','Explainability'],
+    datasets:[
+      {label:'Early period',data:[64,64,55,34,16,8],backgroundColor:'rgba(91,140,255,.45)',borderColor:F.accent,borderWidth:1,borderRadius:5},
+      {label:'Recent period',data:[94,85,77,52,41,26],backgroundColor:'rgba(33,212,194,.6)',borderColor:F.accent2,borderWidth:1,borderRadius:5}
+  ]},
+  options:{indexAxis:'y',maintainAspectRatio:false,
+    plugins:{legend:{labels:{usePointStyle:true,boxWidth:8}}},
+    scales:{x:{grid:grid,beginAtZero:true},y:{grid:noGrid}}}
+});
+
+/* Subfield total */
+const subLabels=['Detection / classification','Quantitative imaging','Image segmentation','Prognosis / outcome prediction',
+  ['Large language models /','natural language processing'],['Image reconstruction /','acceleration'],['Explainability / trustworthy','artificial intelligence'],'Generative / diffusion models','Multimodal artificial intelligence'];
+const subText=(l)=>Array.isArray(l)?l.join(' '):l;
+new Chart(document.getElementById('chSubTotal'),{
+  type:'bar',
+  data:{labels:subLabels,datasets:[{label:'Total citations',data:[4554,4258,3936,2159,1268,1166,949,781,424],
+    backgroundColor:(c)=>grad(c.chart.ctx,'rgba(91,140,255,.95)','rgba(33,212,194,.5)'),borderRadius:6}]},
+  options:{indexAxis:'y',maintainAspectRatio:false,plugins:{legend:{display:false}},
+    scales:{x:{grid:grid,beginAtZero:true},y:{grid:noGrid}}}
+});
+
+/* Subfield mean */
+new Chart(document.getElementById('chSubMean'),{
+  type:'bar',
+  data:{labels:subLabels,datasets:[{label:'Mean citations',data:[28.82,28.58,29.82,25.10,37.29,20.46,27.91,27.89,35.33],
+    backgroundColor:subLabels.map((l)=> (subText(l).indexOf('Large language')===0||subText(l).indexOf('Multimodal')===0)?F.accent4:'rgba(255,122,182,.7)'),
+    borderRadius:6}]},
+  options:{indexAxis:'y',maintainAspectRatio:false,plugins:{legend:{display:false}},
+    scales:{x:{grid:grid,beginAtZero:true},y:{grid:noGrid}}}
+});
+
+/* Model family landscape — colored by group */
+const DL='rgba(91,140,255,.75)', CML='rgba(33,212,194,.7)', RAD='rgba(255,122,182,.75)', OTH='rgba(154,166,207,.6)';
+const famLabels=['Convolutional neural network','Classical machine learning','Radiomics','Other','Transformer / large language model','Vision transformer','Generative adversarial network','Ensemble learning','Recurrent neural network','Clustering'];
+const famPapers=[131,92,40,44,15,11,7,3,2,2];
+const famColors=[DL,CML,RAD,OTH,DL,DL,DL,CML,DL,CML];
+new Chart(document.getElementById('chFamilies'),{
+  type:'bar',
+  data:{labels:famLabels,datasets:[{label:'Papers',data:famPapers,backgroundColor:famColors,borderRadius:6}]},
+  options:{indexAxis:'y',maintainAspectRatio:false,
+    plugins:{legend:{display:false},
+      tooltip:{callbacks:{afterLabel:(c)=>['Deep learning','Classical machine learning','Radiomics','Other','Deep learning','Deep learning','Deep learning','Classical machine learning','Deep learning','Classical machine learning'][c.dataIndex]}}},
+    scales:{x:{grid:grid,beginAtZero:true,title:{display:true,text:'Papers'}},y:{grid:noGrid}}}
+});
+
+/* High-level group mean citations */
+new Chart(document.getElementById('chGroupMean'),{
+  type:'bar',
+  data:{labels:['Radiomics','Convolutional neural network','Classical machine learning','Generative adversarial network','Other','Transformer / large language model','Vision transformer'],
+    datasets:[{label:'Mean citations',data:[30.4,27.7,26.8,13.0,12.8,9.7,7.1],
+      backgroundColor:[RAD,DL,CML,DL,OTH,DL,DL],borderRadius:6}]},
+  options:{indexAxis:'y',maintainAspectRatio:false,plugins:{legend:{display:false}},
+    scales:{x:{grid:grid,beginAtZero:true,title:{display:true,text:'Mean citations per paper'}},y:{grid:noGrid}}}
+});
+
+/* Specific methods bubble */
+new Chart(document.getElementById('chMethods'),{
+  type:'bubble',
+  data:{datasets:[
+    {label:'Principal component analysis',data:[{x:2,y:220,r:9}],backgroundColor:'rgba(255,209,102,.75)'},
+    {label:'Convolutional neural network',data:[{x:9,y:115.3,r:16}],backgroundColor:'rgba(91,140,255,.75)'},
+    {label:'Neural network',data:[{x:2,y:85,r:9}],backgroundColor:'rgba(143,233,223,.7)'},
+    {label:'Machine learning',data:[{x:8,y:76.9,r:15}],backgroundColor:'rgba(255,122,182,.7)'},
+    {label:'Radiomics',data:[{x:11,y:57.6,r:18}],backgroundColor:'rgba(33,212,194,.7)'},
+    {label:'Random forest',data:[{x:9,y:22.7,r:16}],backgroundColor:'rgba(120,160,255,.6)'},
+    {label:'U-Net',data:[{x:13,y:20.2,r:20}],backgroundColor:'rgba(255,170,120,.65)'},
+    {label:'Deep learning',data:[{x:22,y:20.0,r:26}],backgroundColor:'rgba(61,220,151,.6)'},
+    {label:'Support vector machine',data:[{x:8,y:19.5,r:15}],backgroundColor:'rgba(200,140,255,.6)'},
+    {label:'Logistic regression',data:[{x:9,y:18.4,r:16}],backgroundColor:'rgba(255,154,162,.6)'}
+  ]},
+  options:{maintainAspectRatio:false,
+    plugins:{legend:{labels:{usePointStyle:true,boxWidth:8,font:{size:11}}},
+      tooltip:{callbacks:{label:(c)=>`${c.dataset.label}: ${c.parsed.y} mean citations · ${c.parsed.x} papers`}}},
+    scales:{x:{grid:grid,title:{display:true,text:'Number of papers'},beginAtZero:true,suggestedMax:24},
+      y:{grid:grid,title:{display:true,text:'Mean citations per paper'},beginAtZero:true}}}
+});
+
+/* Rigor */
+new Chart(document.getElementById('chRigor'),{
+  type:'line',
+  data:{labels:years,datasets:[
+    {label:'External validation',data:[0,0,7.1,7.1,23.3,18.2,13.0,29.4,14.5,7.7],
+     borderColor:F.accent,backgroundColor:'rgba(91,140,255,.08)',fill:true,tension:.35,borderWidth:3,pointRadius:3},
+    {label:'Multi-center',data:[0,0,7.1,21.4,36.7,36.4,21.7,29.4,23.6,19.2],
+     borderColor:F.accent2,backgroundColor:'rgba(33,212,194,.07)',fill:true,tension:.35,borderWidth:3,pointRadius:3},
+    {label:'Code available',data:[0,0,0,0,0,0,0,0,3.6,0],
+     borderColor:F.accent4,backgroundColor:'transparent',tension:.2,borderWidth:2,pointRadius:3,borderDash:[5,4]},
+    {label:'Data available',data:[0,0,0,0,0,0,0,0,0,0],
+     borderColor:F.accent3,backgroundColor:'transparent',tension:.2,borderWidth:2,pointRadius:2,borderDash:[2,3]}
+  ]},
+  options:{maintainAspectRatio:false,interaction:{mode:'index',intersect:false},
+    plugins:{legend:{labels:{usePointStyle:true,boxWidth:8}}},
+    scales:{y:{grid:grid,beginAtZero:true,ticks:{callback:v=>v+'%'},title:{display:true,text:'Percent of papers'}},x:{grid:noGrid}}}
+});
+
+/* Authors */
+new Chart(document.getElementById('chAuthors'),{
+  data:{labels:['Zaharchuk G.','Filippi C.G.','Wintermark M.','Yeom K.W.','Chang P.D.'],datasets:[
+    {type:'bar',label:'Total citations',data:[1085,968,929,636,537],
+     backgroundColor:'rgba(91,140,255,.55)',borderColor:F.accent,borderWidth:1,borderRadius:6,yAxisID:'y',order:2},
+    {type:'line',label:'Mean citations',data:[60.3,161.3,77.4,90.9,67.1],borderColor:F.accent3,
+     backgroundColor:F.accent3,pointRadius:5,borderWidth:3,tension:.3,yAxisID:'y1',order:1}
+  ]},
+  options:{maintainAspectRatio:false,interaction:{mode:'index',intersect:false},
+    plugins:{legend:{labels:{usePointStyle:true,boxWidth:8}}},
+    scales:{y:{position:'left',grid:grid,title:{display:true,text:'Total citations'}},
+      y1:{position:'right',grid:noGrid,title:{display:true,text:'Mean citations'},beginAtZero:true},x:{grid:noGrid}}}
+});
+
+/* Institutions */
+new Chart(document.getElementById('chInst'),{
+  data:{labels:['Stanford University School of Medicine','Mayo Clinic','Harvard Medical School','Stanford University','Massachusetts General Hospital'],datasets:[
+    {type:'bar',label:'Papers',data:[23,23,18,15,14],
+     backgroundColor:'rgba(33,212,194,.5)',borderColor:F.accent2,borderWidth:1,borderRadius:6,yAxisID:'y',order:2},
+    {type:'line',label:'Mean citations',data:[60.1,9.9,23.9,74.3,36.1],borderColor:F.accent4,
+     backgroundColor:F.accent4,pointRadius:5,borderWidth:3,tension:.3,yAxisID:'y1',order:1}
+  ]},
+  options:{maintainAspectRatio:false,interaction:{mode:'index',intersect:false},
+    plugins:{legend:{labels:{usePointStyle:true,boxWidth:8}},
+      tooltip:{callbacks:{title:(t)=>t[0].label}}},
+    scales:{y:{position:'left',grid:grid,title:{display:true,text:'Papers'}},
+      y1:{position:'right',grid:noGrid,title:{display:true,text:'Mean citations'},beginAtZero:true},
+      x:{grid:noGrid,ticks:{callback:function(v){const l=this.getLabelForValue(v);return l.length>16?l.slice(0,15)+'…':l;}}}}}
+});
+</script>
+</body>
+</html>
